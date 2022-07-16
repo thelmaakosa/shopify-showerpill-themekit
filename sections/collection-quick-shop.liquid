@@ -1,0 +1,401 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<style>
+    .template-collection{
+        background: #FFF;
+    }
+    .quickshop__container {
+      background-color: transparent;
+      padding-top: 80px;
+      position: relative;
+      padding-bottom: 150px;
+      display: flex;
+      justify-content: center;
+
+    }
+    .collection-quick-shop-item{
+        width: 27.3%;
+        margin: 3%;
+        float:left;
+    }
+
+
+    .quickshop__container-item {
+      position: relative;
+    }
+
+    .quickshop__product-image {
+      {% comment %} max-width: 400px; {% endcomment %}
+    }
+
+    @media (max-width: 600px) {
+      .quickshop__product-image {
+        max-width: 100%;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1000px) {
+      .collection-quick-shop-item{
+          width: 40%;
+          margin: 5%;
+          float: left;
+      }
+    }
+ 
+    .quickshop__header-title {
+      color: #0D0D0D;
+      font-size: 40px;
+      line-height: 55px;
+      {% comment %} padding-left: 80px; {% endcomment %}
+      margin-top: 40px;
+      font-weight: 500;
+    }
+    .quickshop__header-desc{
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .quickshop__header-title  {
+        padding-left: 0;
+        font-size: 28px;
+        line-height: 34px;
+        margin-top: 18px;
+        text-align: center;
+      }
+      .quickshop__container{
+        padding-top: 40px;
+        padding-bottom:40px;
+      }
+    }
+
+    .quickshop__container .swiper-slide {
+      height: 75% !important;
+    }
+
+    .quickshop__button {
+      width: 50%;
+      border: none;
+      padding: 14px 0;
+      text-transform: uppercase;
+      font-family: "Cenzoflare";
+      line-height: 20px;
+      font-size: 1.5em;
+      background-color:#edf0ef;
+    }
+
+    .quickshop__button:hover {
+      background-color: #000;
+      color: #fff;
+      transition: .4s;
+    }
+
+    .quickshop__button span {
+      border-bottom: solid 1px #000;
+    }
+
+    .quickshop__form {
+      position: absolute;
+      z-index: 999;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff;
+      border: solid 3px #C7A478;
+    }
+
+    .btn-quickshop {
+      width: 100%;
+    }
+
+    .quickshop__title-container {
+      display: flex;
+      justify-content: space-between;
+      background-color: #edf0ef;
+      border-bottom: 1px solid #cfcfcf;
+      align-items: center;
+      padding-top: 14px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 8px;
+      margin-top: -8px;
+    }
+
+    .quickshop__title {
+      font-size: 32px;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    .quickshop__inner-title {
+      font-size: 24px;
+      text-align: left;
+      padding: 0 10px;
+      padding-top: 10px;
+    }
+
+    .quickshop__price {
+      font-size: 28px;
+      margin: 0;
+      color: #98989A;
+      font-weight: 500;
+    }
+
+    .quickshop__variant-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      padding-bottom: 18px;
+    }
+
+    .product-form__item {
+      margin-bottom: 0;
+    }
+
+    .product-form__item--no-variants {
+      max-width: unset;
+    }
+
+    .quickshop__variant-title {
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 0.38px;
+      font-family: "Cenzoflare";
+      text-align: left;
+      color: #161616;
+    }
+
+    .product-form__item {
+      flex-basis: unset;
+    }
+
+    .quickshop__selectors {
+      border-color: #C7A478;
+      border-width: 3px;
+      border-radius: unset;
+    }
+
+    .quickshop__close-button {
+	    float: right;
+	    margin-right: 15px;
+        cursor: pointer;
+        color: #000;
+    }
+
+
+</style>
+
+  <div class="quickshop__container">
+  <div class="wrapper">
+  {% if section.settings.title != blank %}
+    <h2 class="quickshop__header-title">{{section.settings.title}}</h2>
+  {% endif %}
+  {% if section.settings.description != blank %}
+    <div class="quickshop__header-desc">{{section.settings.description}}</div>
+  {% endif %}
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-collection-container">
+        {% for product in collection.products %}
+          <div class="collection-quick-shop-item {% if product.tags contains 'wholesale'%} wholesale-product{% endif %}">
+            <div class="quickshop__container-item">
+              <a href="{{product.url}}"><img class="quickshop__product-image" src="{{ product | img_url: 'large' }}" /></a>
+              <div class="quickshop__title-container">
+                <h3 class="quickshop__title">{{ product.title }}</h3> <h3 class="quickshop__price">{{ product.price | money }}</h3>
+              </div>
+
+              <div class="pdp_details">
+                <a href="{{product.url}}">
+                  <span>
+                    View Details
+                  </span> 
+                </a>
+              </div>
+
+              <button id="{{ forloop.index }}" class="quickshop__button">
+                <span>
+                  Quick Add
+                </span> 
+              </button>
+              
+            {% capture "form_classes" -%}
+              product-form product-form-{{ section.id }}
+              hidden
+              quickshop__form
+              {%- if section.settings.enable_payment_button and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}
+              {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
+            {%- endcapture %}
+
+
+
+              {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+
+              {%- assign current_variant = product.selected_or_first_available_variant -%}
+
+              <div id="quickshop-close-{{ forloop.index }}" class="quickshop__close-button {{ forloop.index }}">X</div>
+
+              <h3 class="quickshop__inner-title">{{ product.title }}</h3>
+
+              
+              <div class="quickshop__variant-container">
+              {% unless product.has_only_default_variant %}
+                <div class="product-form__controls-group">
+                  {% for option in product.options_with_values %}
+                    <div class="selector-wrapper js product-form__item">
+                      <label class="quickshop__variant-title" for="SingleOptionSelector-{{ forloop.index0 }}">
+                        {{ option.name }}
+                      </label>
+                      <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input quickshop__selectors"
+                        id="SingleOptionSelector-{{ forloop.index0 }}"
+                        data-index="option{{ forloop.index }}"
+                      >
+                        {% for value in option.values %}
+                          <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                        {% endfor %}
+                      </select>
+                    </div>
+                  {% endfor %}
+                </div>
+              {% endunless %}
+
+              <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+                {% for variant in product.variants %}
+                  <option value="{{ variant.id }}"
+                    {%- if variant == current_variant %} selected="selected" {%- endif -%}
+                  >
+                    {{ variant.title }}  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                  </option>
+                {% endfor %}
+              </select>
+
+                <div class="product-form__controls-group">
+                  <div class="product-form__item">
+                    <label class="quickshop__variant-title" for="Quantity-{{ section.id }}">{{ 'products.product.quantity' | t }}</label>
+                    <input type="number" id="Quantity-{{ section.id }}"
+                      name="quantity" value="1" min="1" pattern="[0-9]*"
+                      class="product-form__input product-form__input--quantity quickshop__selectors" data-quantity-input
+                    >
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"
+                data-error-message-wrapper
+                role="alert"
+              >
+                <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+                {% include 'icon-error' %}
+                <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
+              </div>
+
+              <div class="product-form__controls-group product-form__controls-group--submit">
+                <div class="product-form__item product-form__item--submit
+                  {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
+                  {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
+                >
+                  <button type="submit" name="add"
+                    {% unless current_variant.available %} aria-disabled="true"{% endunless %}
+                    aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
+                    class="btn-primary btn-quickshop"
+                    {% if settings.enable_ajax %}aria-haspopup="dialog"{% endif %}
+                    data-add-to-cart>
+                    <span data-add-to-cart-text>
+                      {% unless current_variant.available %}
+                        {{ 'products.product.sold_out' | t }}
+                      {% else %}
+                        {{ 'products.product.add_to_cart' | t }}
+                      {% endunless %}
+                    </span>
+                    <span class="hide" data-loader>
+                      {% include 'icon-spinner' %}
+                    </span>
+                  </button>
+                  {% if section.settings.enable_payment_button %}
+                    {{ form | payment_button }}
+                  {% endif %}
+                </div>
+              </div>
+            {% endform %}
+          </div>
+
+          {% unless customer.tags contains 'VerifiedByWholesaleAllInOne' %}
+            {% style%}
+              .wholesale-product.collection-quick-shop-item{
+                display:none;
+              }
+            {% endstyle%}
+          {% endunless %}
+
+        </div>
+        {% endfor %}
+    </div>
+    <!-- Add Pagination -->
+    {% comment %} <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> {% endcomment %}
+    <div class="swiper-pagination"></div>
+    
+  </div>
+</div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    $('.quickshop__button').click(function(){
+      $(this).parents(".collection-quick-shop-item").addClass("item_active")      
+      $(this).next().slideToggle('slow')
+      $(".collection-quick-shop-item form").css("display", "none");
+      $(".item_active form").css("display", "block");
+      let id = $(this).attr('id');
+      console.log(id)
+
+      let closeButton = "#quickshop-close-" + id;
+    });
+
+    $('.quickshop__close-button').click(function() {
+      $(this).parents(".collection-quick-shop-item").removeClass("item_active");
+      $(".collection-quick-shop-item form").css("display", "none");
+      $(".item_active form").css("display", "block");      
+      // $(this).parent().slideToggle('slow');
+    });
+
+  </script>
+
+
+{% schema %}
+{
+  "name": "Collection Quick Shop",
+  "class": "collection-quick-shop",
+  "settings": [
+      {
+          "type":"text",
+          "id":"title",
+          "label": "Title",
+          "default": "Headline Example"
+      },
+      {
+         "type":"richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Description Example</p>" 
+      },
+      {
+          "type":"collection",
+          "id":"collection",
+          "label": "Collection"
+      }
+  ],
+  "presets": [
+    {
+      "name": "Collection Quick Shop",
+      "category": "Product"
+    }
+  ]    
+}
+{% endschema %}
+
+

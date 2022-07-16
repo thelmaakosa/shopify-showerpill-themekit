@@ -1,0 +1,235 @@
+<style>
+    .blog-feature__section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        padding: 100px 0;
+    }
+
+    @media (max-width: 900px) {
+        .blog-feature__section {
+            flex-direction: column;
+            padding: 50px 0;
+        }
+    }
+
+    .blog-feature__item {
+        background-size: cover;
+        height: 450px;
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 45%;
+    }
+
+    .blog-feature__item-image--a {
+        background-image: url({{ section.settings.image-a | img_url: 'large' }});
+    }
+
+    .blog-feature__item-image--b {
+        background-image: url({{ section.settings.image-b | img_url: 'large' }});
+    }
+
+    @media (max-width: 600px) {
+        .blog-feature__item-image--b {
+            background-position: center;
+        }
+    }
+
+
+
+    @media (max-width: 900px) {
+        .blog-feature__item {
+            margin: 20px 0;
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .blog-feature__item {
+            height: unset;
+        }
+    }
+
+
+    .blog-feature__overlay {
+        background: transparent linear-gradient(90deg, #161616 0%, #15151580 62%, #0D0D0D00 100%) 0% 0% no-repeat padding-box;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 600px) {
+        .blog-feature__overlay {
+            padding: 20px 16px;
+        }
+    }
+
+    .blog-feature__title {
+        font-size: 40px;
+        color: #fff;
+        max-width: 80%;
+        letter-spacing: 0px;
+        line-height: 44px;
+        font-weight: 400;
+    }
+
+    @media (max-width: 600px) {
+        .blog-feature__title {
+            max-width: 100%;
+        }
+    }
+
+
+    .blog-feature__title span {
+        color: #C7A478;
+    }
+
+
+    .blog-feature__paragraph {
+        font-size: 18px;
+        color: #fff;
+        max-width: 80%;
+        letter-spacing: .56px;
+        line-height: 26px;
+        margin-bottom: 44px;
+    }
+
+    @media (max-width: 600px) {
+        .blog-feature__paragraph {
+            max-width: 74%;
+        }
+    }
+
+</style>
+<div class="flex-column-center background-white">
+<div class="wrapper">
+<div class="blog-feature__section">
+    <div class="blog-feature__item blog-feature__item-image--a">
+        <div class="blog-feature__overlay">
+            <div>
+                <h3 class="blog-feature__title">{{ section.settings.word-one-a }} {{ section.settings.word-two-a }} <span>{{ section.settings.word-three-a }}</span></h3>
+                <p class="blog-feature__paragraph">{{ section.settings.paragraph-a }}</p>
+            </div>
+            <div>
+                <a href="{{ section.settings.btnLink-a }}">
+                    <button class="btn-primary">{{ section.settings.btnText-a }}</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="blog-feature__item blog-feature__item-image--b">
+        <div class="blog-feature__overlay">
+            <div>
+                <h3 class="blog-feature__title">{{ section.settings.word-one-b }} <span>{{ section.settings.word-two-b }}</span> {{ section.settings.word-three-b }}</h3>
+                <p class="blog-feature__paragraph">{{ section.settings.paragraph-b }}</p>
+            </div>
+            <div>
+                <a href="{{ section.settings.btnLink-b }}">
+                    <button class="btn-primary">{{ section.settings.btnText-b }}</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+{% schema %}
+{
+  "name": "Blog Feature",
+  "settings": [
+    {
+        "type": "text",
+        "id": "word-one-a",
+        "label": "Word / Phrase One",
+        "default": "Personal Protective"
+    },
+    {
+        "type": "text",
+        "id": "word-two-a",
+        "label": "Word / Phrase Two - Colored Text",
+        "default": "Hygiene"
+    },
+    {
+        "type": "text",
+        "id": "word-three-a",
+        "label": "Word / Phrase Three",
+        "default": "In Group Sports"
+    },
+    {
+        "type": "text",
+        "id": "paragraph-a",
+        "label": "Title",
+        "default": "Protect yourself and others; at the gym, on the field, and in your home."
+    },
+    {
+        "type": "url",
+        "id": "btnLink-a",
+        "label": "Button Link"
+    },
+    {
+        "type": "text",
+        "id": "btnText-a",
+        "label": "Button Text",
+        "default": "Learn More"
+    },
+    {
+        "type": "image_picker",
+        "id": "image-a",
+        "label": "Background Image"
+    },
+    {
+        "type": "text",
+        "id": "word-one-b",
+        "label": "Word / Phrase One",
+        "default": "Personal Protective"
+    },
+    {
+        "type": "text",
+        "id": "word-two-b",
+        "label": "Word / Phrase Two",
+        "default": "Hygiene"
+    },
+    {
+        "type": "text",
+        "id": "word-three-b",
+        "label": "Word / Phrase Three - Colored Text",
+        "default": "In Group Sports"
+    },
+    {
+        "type": "text",
+        "id": "paragraph-b",
+        "label": "Title",
+        "default": "Protect yourself and others; at the gym, on the field, and in your home."
+    },
+    {
+        "type": "url",
+        "id": "btnLink-b",
+        "label": "Button Link"
+    },
+    {
+        "type": "text",
+        "id": "btnText-b",
+        "label": "Button Text",
+        "default": "Learn More"
+    },
+    {
+        "type": "image_picker",
+        "id": "image-b",
+        "label": "Background Image"
+    }
+    
+  ],
+    "presets": [
+        {
+        "name": "Blog Feature",
+        "category": "Product"
+        }
+    ]    
+}
+{% endschema %}

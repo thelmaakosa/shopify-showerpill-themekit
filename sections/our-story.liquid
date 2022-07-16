@@ -1,0 +1,130 @@
+<style>
+    .our-story__section {
+        background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-image: url('{{ 'our-story-five.png' | asset_img_url: 'master' }}');
+        padding-bottom: 60px;
+    }
+
+
+    @media (max-width: 1000px) {
+      .our-story__section {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+
+    .our-story__image {}
+
+    .our-story__content {
+        max-width: 30%;
+        margin-left: 100px;
+        position: relative;
+        margin-top: 184px;
+    }
+
+    @media (max-width: 1000px) {
+      .our-story__content {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        padding: 0 16px;
+      }
+    }
+
+    .our-story__title {
+        font-size: 60px;
+        line-height: 55px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        position: absolute;
+        top: -115px;
+        left: -185px;
+        max-width: 600px;
+    }
+
+    @media (max-width: 1500px) {
+      .our-story__title {
+        left: -164px;
+        top: -105px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .our-story__title {
+        position: unset;
+      }
+    }
+
+
+    .our-story__paragraph {
+        color: #171717;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.54px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+</style>
+<div class="our-story__section">
+    <div class="our-story__image">
+        <img src="{{ section.settings.image | img_url: 'master' }}" />
+    </div>
+    <div class="our-story__content">
+        <h1 class="our-story__title h2">{{ section.settings.title }}</h1>
+        <p class="our-story__paragraph">{{ section.settings.paragraph }}</p>
+        <a href="{{ section.settings.btnLink }}">
+            <button class="btn-primary">{{ section.settings.btnText }}</button>
+        </a>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Our Story",
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+    },
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "How a simple body wipe became a brand on a mission"
+    },
+    {
+      "type": "text",
+      "id": "paragraph",
+      "label": "Title",
+      "default": "Many years ago Justin Forsett, Wale Forrester, and Wendell Hunter met on the football field at UC Berkeley. They fostered a community within the locker room, and felt comfortable to share their business ideas; thus a friendship and business partnership evolved beyond college."
+    },
+    {
+      "type": "url",
+      "id": "btnLink",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "btnText",
+      "label": "Button Text",
+      "default": "Learn More"
+    }
+    
+
+  ],
+"presets": [
+    {
+      "name": "Our Story",
+      "category": "Product"
+    }
+  ]    
+}
+{% endschema %}

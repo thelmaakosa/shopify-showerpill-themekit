@@ -1,0 +1,115 @@
+<div class="innner-page__wrapper">
+    <div class="inner-page__hero">
+        <div class="inner-page__hero-content">
+            <h1 class="inner-page__hero-title">{{ section.settings.heroTitle }}</h1>
+            <p class="inner-page__hero-paragraph">{{ section.settings.heroDesc }}</p>
+            {% if section.settings.btn-enabled %}
+            <a href="{{ section.settings.heroBtnLink }}">
+                <button class="btn-primary">{{ section.settings.heroBtnText }}</button>
+            </a>
+            {% endif %}
+        </div>
+        <div class="inner-page__hero-image">
+            <div class="inner-page__hero-overlay"></div>
+            <img src="{{ section.settings.heroImage | img_url: 'master' }}" />
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Story Hero",
+  "class": "story-hero",
+  "settings": [
+    {
+        "id": "heroImage",
+        "type": "image_picker",
+        "label": "Hero Image"
+    },
+    {
+        "id": "heroTitle",
+        "type": "text",
+        "label": "Hero Title",
+        "default": "Headline"
+    },
+    {
+        "id": "heroDesc",
+        "type": "text",
+        "label": "Hero Description",
+        "default": "Description"
+    },
+    {
+        "id": "heroBtnText",
+        "type": "text",
+        "label": "Hero Button Text",
+        "default": "Button Text"
+    },
+    {
+        "id": "heroBtnLink",
+        "type": "url",
+        "label": "Hero Button URL"
+    },
+    {
+        "type": "checkbox",
+        "id": "second-enabled",
+        "label": "Enable Second Button"
+    },
+    {
+        "id": "secondBtnText",
+        "type": "text",
+        "label": "Second Button Text",
+        "default": "Button Text"
+    },
+    {
+        "id": "secondBtnLink",
+        "type": "url",
+        "label": "Second Button URL"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+    .story-hero .btn-container{
+        display:flex;
+    }
+    .story-hero .btn-container a{
+        width:50%;
+    }
+    .story-hero button{
+        text-transform: none;
+    }
+    .story-hero h1{
+        {% comment %} text-transform: none; {% endcomment %}
+    }
+    .story-hero .image-container{
+        width:50%;
+        position: relative;
+    }
+    .story-hero .image-container img{
+        width: 80%;
+        height: auto;
+        position: absolute;
+        bottom: -50px;
+    }
+    .story-hero .hero-background{
+        width: 60%;
+        height: 70%;
+        background: bisque;
+        right: 14%;
+        bottom: -100px;
+        position: absolute;
+    }
+    .story-hero .inner-page__hero{
+        margin-top: 90px;
+    }
+
+    @media screen and (max-width:767px){
+        .story-hero .image-container{
+            display:none;
+        }
+        .story-hero .inner-page__hero{
+            margin-top: 0;
+        }
+    }
+{% endstyle%}

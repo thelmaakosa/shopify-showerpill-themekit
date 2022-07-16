@@ -1,0 +1,85 @@
+<div class="faq-section">
+    <h2 class="faq-section__title">{{section.settings.title}}</h2>
+
+    <div class="accordion">
+        {% for block in section.blocks %}
+          {% if block.type == 'faq' %}
+            <p class="faq-section__question"><a href=""><span class="plus">+</span> {{ block.settings.question }}</a></p>
+            <dd class="faq-section__answer">{{ block.settings.answer }}</dd>
+          {% endif %}
+          
+          {% if block.type == 'heading' %}
+            <h2 class="faq-section__inner_title" style="color:#0d0d0d;">{{ block.settings.title }}</h2>
+          {% endif %}
+
+        {% endfor %}       
+    </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "FAQs",
+  "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "FAQ Headline"
+    }
+  ],
+  "blocks": [
+  {
+    "type": "faq",
+    "name": "FAQ",
+    "settings": [
+      {
+        "id": "question",
+        "type": "text",
+        "label": "Question"
+      },
+      {
+        "id": "answer",
+        "type": "text",
+        "label": "Answer"
+      }
+    ]
+  }, 
+  {
+    "type": "heading",
+    "name": "Heading",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Title"
+      }
+    ]
+  }
+]
+}
+{% endschema %}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    
+    var allPanels = $('.accordion > dd').hide();
+      
+    $('.accordion > p > a').click(function() {
+        $this = $(this);
+        $target =  $this.parent().next();
+        
+        $target.closest('.plus').hide()
+
+        if(!$target.hasClass('active')){
+           allPanels.removeClass('active').slideUp();
+           $target.addClass('active').slideDown();
+            //.toggleClass('rotate45');
+        }
+        
+      return false;
+    });
+  
+
+  
+  </script>

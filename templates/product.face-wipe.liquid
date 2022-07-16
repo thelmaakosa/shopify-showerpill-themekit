@@ -1,0 +1,129 @@
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+{% section 'product-template' %}
+<!-- {% section 'product-recommendations' %} -->
+
+<div class="FAQ-Section">
+    <div class="FAQ__left">
+        <h2 class="FAQ__left--title">FAQS</h2>
+        <h5 class="FAQ__left--question">
+            What ingredients are in your wipes?
+        </h5>
+        <p class="FAQ__left--answer">
+           Only the good stuff! We use the highest quality ingredients and test our products with real athletes, trainers and doctors. No alcohol, parabens or sulfates. Learn more.
+        </p>
+        <h5 class="FAQ__left--question">
+            Are these wipes safe to use on kids?
+        </h5>
+        <p class="FAQ__left--answer">
+            Absolutely! Our founders rely on the product to wipe down their kids between bath times. In fact, our active ingredient is safely found in many baby products.
+        </p>
+        <h5 class="FAQ__left--question">
+            Do you offer wholesale? 
+        </h5>
+        <p class="FAQ__left--answer">Yes! Retail businesses, gyms, and community organizations are all eligible for wholesale pricing. Reach out & let's work together.</p>
+        <a href="/pages/faq"><button class="btn-primary">Learn More</button></a>
+    </div>
+    <div class="FAQ__right FAQ__background-image--face-wipe">
+        <div class="FAQ__overlay"></div>
+        <p><img src="{{ 'Check-icon.png' | asset_img_url: 'small' }}" class="check-mark">Dual-Sided</p>
+        <p><img src="{{ 'Check-icon.png' | asset_img_url: 'small' }}" class="check-mark">Hypoallergenic</p>
+        <p><img src="{{ 'Check-icon.png' | asset_img_url: 'small' }}" class="check-mark">Dermatologist Tested</p>
+        <p><img src="{{ 'Check-icon.png' | asset_img_url: 'small' }}" class="check-mark">Clean Ingredients</p>
+    </div>
+</div>
+
+<!---- ALTERNATING FEATURE SECTION ----->
+
+<div class="Alternating-Feature-Section">
+    <div class="Alternating__container margin-bottom-50">
+        <img src="{{ 'girl-in-mirror.jpg' | asset_img_url: 'large' }}" />
+        <div class="Alternating__content-container">
+            <h1 class="Alternating__title">Dual Sided</h1>
+            <h4 class="Alternating__subtitle">Scrub & Refresh</h4>
+            <p class="Alternating__paragraph">A textured side infused with ingredients like charcoal powder to exfoliate, and a smooth side infused with natural cucumber extract to sooth & hydrate.</p>
+        </div>
+    </div>
+    <div class="Alternating__container flex-column-reverse">
+        <div class="Alternating__content-container--left-align">
+            <h1 class="Alternating__title">Skin Friendly</h1>
+            <h4 class="Alternating__subtitle">Safe For All Skin Types</h4>
+            <p class="Alternating__paragraph">Our Face Wipe is dermatologist tested, hypoallergenic, and safe on sensitive skin. Gently scrub away dirt and worries. We've got your back.</p>
+        </div>
+        <img src="{{ 'man-camping.jpg' | asset_img_url: 'large' }}" />
+    </div>
+</div>
+
+
+
+{% section 'homepage-testimonials' %}
+
+<div class="reviews-section">
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <div class="elfsight-app-55464bd0-1587-401d-83f1-8ba77f0bea24"></div>
+</div>
+
+{% section 'pdp-featured-face' %}
+
+{% section 'press' %}
+
+{% if collection %}
+  <div class="text-center return-link-wrapper page-width">
+    <a href="{{ collection.url }}" class="btn btn--secondary btn--has-icon-before return-link">
+      {% include 'icon-arrow-left' %}
+      {{ 'products.product.back_to_collection' | t: title: collection.title }}
+    </a>
+  </div>
+{% endif %}
+
+<script>
+  // Override default values of shop.strings for each template.
+  // Alternate product templates can change values of
+  // add to cart button, sold out, and unavailable states here.
+  theme.productStrings = {
+    addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }},
+    unavailable: {{ 'products.product.unavailable' | t | json }}
+  }
+</script>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": {{ shop.url | append: product.url | json }},
+  {%- if product.featured_media -%}
+    {%- assign media_size = product.featured_media.preview_image.width | append: 'x' -%}
+    "image": [
+      {{ product.featured_media | img_url: media_size | prepend: "https:" | json }}
+    ],
+  {%- endif -%}
+  "description": {{ product.description | strip_html | json }},
+  {%- if current_variant.sku != blank -%}
+    "sku": {{ current_variant.sku | json }},
+  {%- endif -%}
+  "brand": {
+    "@type": "Thing",
+    "name": {{ product.vendor | json }}
+  },
+  "offers": [
+    {%- for variant in product.variants -%}
+      {
+        "@type" : "Offer",
+        {%- if variant.sku != blank -%}
+          "sku": {{ variant.sku | json }},
+        {%- endif -%}
+        "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+        "price" : {{ variant.price | divided_by: 100.00 | json }},
+        "priceCurrency" : {{ cart.currency.iso_code | json }},
+        "url" : {{ shop.url | append: variant.url | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>

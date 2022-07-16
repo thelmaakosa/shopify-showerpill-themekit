@@ -1,0 +1,250 @@
+<style>
+
+
+  .featured-news__section {
+    display: flex;
+    padding: 100px 80px;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .featured-news__section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+}
+
+.featured-news__content {
+    max-width: 40%;
+    padding-top: 44px;
+    padding-right: 26px;
+}
+
+@media (max-width: 800px) {
+  .featured-news__content {
+    max-width: 100%;
+    padding-right: 0;
+  }
+} 
+
+.featured-news__title {
+    color: #000;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 400;
+}
+
+.featured-news__subtitle {
+    color: #000;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 1.1px;
+    margin-bottom: 40px;
+}
+
+.featured-news__paragraph {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.featured-news__header-image {
+  }
+
+@media (max-width: 1200px) {
+  .featured-news__header-image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.featured-news__posts {
+    display: flex;
+    padding: 80px;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+@media (max-width: 800px) {
+  .featured-news__posts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 16px;
+  }
+}
+
+.featured-news__post--left {
+  padding-right: 40px;
+}
+
+@media (max-width: 800px) {
+  .featured-news__post--left {
+    padding-right: 0;
+    margin-bottom: 90px;
+  }
+}
+
+.featured-news__post--right {
+    max-width: 30%;
+}
+
+@media (max-width: 800px) {
+  .featured-news__post--right {
+    max-width: 100%;
+  }
+}
+
+</style>
+<div class="flex-column-center background-white">
+<div class="wrapper">
+<div id="haiti" class="featured-news__section">
+    
+    <div class="featured-news__content">
+        <h1 class="featured-news__title">{{ section.settings.title-1 }}</h1>
+        <h4 class="featured-news__subtitle">{{ section.settings.subtitle-1 }}</h4>
+        <p class="featured-news__paragraph">
+          {{ section.settings.paragraph }}
+        </p>
+        <a href="{{ section.settings.btnLink-1 }}">
+          <button class="btn-primary">{{ section.settings.btnText-1 }}</button>
+        </a>
+    </div>
+    <div class="featured-news__header-image">
+        <img src="{{ section.settings.image-1 | img_url: 'master' }}" />
+    </div>
+
+</div>
+</div>
+
+<div class="wrapper">
+<div class="featured-news__posts">
+    <div class="featured-news__post--left">
+      <img src="{{ section.settings.image-2 | img_url: 'master' }}" />
+       <h1 class="featured-news__title">{{ section.settings.title-2 }}</h1>
+       <h4 class="featured-news__subtitle">{{ section.settings.subtitle-2 }}</h4>
+       <a href="{{ section.settings.btnLink-2 }}">
+          <button class="btn-primary">{{ section.settings.btnText-2 }}</button>
+      </a>
+    </div>
+    <div class="featured-news__post--right">
+        <img src="{{ section.settings.image-3 | img_url: 'master' }}" />
+       <h1 class="featured-news__title">{{ section.settings.title-3 }}</h1>
+       <h4 class="featured-news__subtitle">{{ section.settings.subtitle-3 }}</h4>
+       <a href="{{ section.settings.btnLink-3 }}">
+          <button class="btn-primary">{{ section.settings.btnText-3 }}</button>
+       </a>
+
+    </div>
+</div>
+</div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured News",
+  "settings": [
+    {
+        "type": "text",
+        "id": "title-1",
+        "label": "Title",
+        "default": "This is a headline"
+    },
+    {
+      "type": "text",
+      "id": "subtitle-1",
+      "label": "Subtitle",
+      "default": "Subheadline"
+    },
+    {
+      "type": "text",
+      "id": "paragraph",
+      "label": "Paragraph",
+      "default": "Our sports scholarship program provides opportunities for underserved youth to play sports. This community driven effort supports positive youth development and social accountability through team-oriented activities."
+    },
+    {
+      "type": "image_picker",
+      "id": "image-1",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "btnText-1",
+      "label": "Button Text",
+      "default": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btnLink-1",
+      "label": "Button URL"
+    },
+  {
+      "type": "text",
+      "id": "title-2",
+      "label": "Title",
+      "default": "This is a headline"
+  },
+  {
+    "type": "text",
+    "id": "subtitle-2",
+    "label": "Subtitle",
+    "default": "Subheadline"
+  },
+  {
+    "type": "image_picker",
+    "id": "image-2",
+    "label": "Image"
+  },
+  {
+    "type": "text",
+    "id": "btnText-2",
+    "label": "Button Text",
+    "default": "Button Text"
+  },
+  {
+    "type": "url",
+    "id": "btnLink-2",
+    "label": "Button URL"
+  },
+  {
+      "type": "text",
+      "id": "title-3",
+      "label": "Title",
+      "default": "This is a headline"
+  },
+  {
+    "type": "text",
+    "id": "subtitle-3",
+    "label": "Subtitle",
+    "default": "Subheadline"
+  },
+  {
+    "type": "image_picker",
+    "id": "image-3",
+    "label": "Image"
+  },
+  {
+    "type": "text",
+    "id": "btnText-3",
+    "label": "Button Text",
+    "default": "Button Text"
+  },
+  {
+    "type": "url",
+    "id": "btnLink-3",
+    "label": "Button URL"
+  }
+  ],
+"presets": [
+    {
+      "name": "Featured News",
+      "category": "Product"
+    }
+  ]    
+}
+{% endschema %}

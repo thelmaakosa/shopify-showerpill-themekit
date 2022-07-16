@@ -1,0 +1,154 @@
+<style>
+
+    
+</style>
+
+<div class="innner-page__wrapper">
+    <div class="inner-page__hero">
+        <div class="inner-page__hero-content">
+            <h1 class="inner-page__hero-title">{{ section.settings.heroTitle }}</h1>
+            <p class="inner-page__hero-paragraph">
+                {{ section.settings.heroParagraph }}
+            </p>
+            {% if section.settings.btn-enabled %}
+            <a href="{{ section.settings.heroBtnLink }}">
+                <button class="btn-primary">{{ section.settings.heroBtnText }}</button>
+            </a>
+            {% endif %}
+        </div>
+        <div class="inner-page__hero-image">
+            <div class="inner-page__hero-overlay"></div>
+            <img src="{{ section.settings.heroImage | img_url: 'master' }}" />
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="hygiene__three-up">
+    <h1 class="hygiene__three-up-title">Your Hygiene Matters</h1>
+    <h3 class="hygiene__three-up-subtitle">Hustle Clean products are simple, safe and soothing for your skin. So you'll feel like you've just taken a shower even when you have no time for or access to one.</h3>
+    <div class="three-up__container">
+        <div class="three-up__item three-up__item-background--a">
+            <div class="three-up__item-overlay"></div>
+            <h1 class="three-up__item-title">Clean</h1>
+            <hr class="three-up__item-hr" />
+            <h3 class="three-up__item-subtitle">FDA Approved to kill 99.99% of germs</h3>
+        </div>
+        <div class="three-up__item three-up__item-background--b">
+            <div class="three-up__item-overlay"></div>
+            <h1 class="three-up__item-title">Deodorize</h1>
+            <hr class="three-up__item-hr" />
+            <h3 class="three-up__item-subtitle">Available in Unscented, Fresh, and Lavender</h3>
+        </div>
+        <div class="three-up__item three-up__item-background--c">
+            <div class="three-up__item-overlay"></div>
+            <h1 class="three-up__item-title">Grab & Go</h1>
+            <hr class="three-up__item-hr" />
+            <h3 class="three-up__item-subtitle">Convenient self-care anytime, anywhere</h3>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="hygiene-info__section">
+    <div class="hygiene-info__image">
+        <img src="{{ 'Relentless.png' | asset_img_url: 'master' }}" />    
+    </div>
+    <div class="hygiene-info__content">
+        <h1 class="hygiene-info__content-title">Personal Protective Hygiene™</h1>
+        <p class="hygiene-info__content-subtitle">
+            Hustle Clean’s premium collection of antimicrobial and antibacterial products can clean, sanitize, and disinfect to kill 99.99% of germs.
+        </p>
+        <hr class="hygiene-info__content-hr" />
+        <p class="hygiene-info__content-paragraph">
+            Hustle Clean’s Personal Protective Hygiene ™ (PPH) is an FDA-approved, powerhouse ingredient that’s as active as you are. It fights disease and infection that breeds in locker rooms and gyms with shared equipment. PPH protects you, the other gym-goers, and your loved ones.
+        </p>
+        <h3 class="hygiene-info__content-list-title">Limit Your Exposure to Germs That Cause:</h3>
+        <div class="hygiene-info__content-list-container">
+            <ul class="hygiene-info__content-list">
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Covid-19</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Staphylococcus Aureus</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Influenza</li>
+            </ul>
+            <ul class="hygiene-info__content-list">
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Ringworm</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Much more</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="hygiene-info__section hygiene-info__section--right">
+   
+    <div class="hygiene-info__content hygiene-info__content--right">
+        <h1 class="hygiene-info__content-title">Real Hustle. Real Clean.</h1>
+        <p class="hygiene-info__content-subtitle">
+            We see you. You’re hustling, you’re grinding.
+        </p>
+        <hr class="hygiene-info__content-hr" />
+        <p class="hygiene-info__content-paragraph">
+            You’re up before the sun then working around the clock. You’re playing super-parent, crushing your side hustles, and pushing your PR. You’re championing each day, and you deserve to treat yourself like the winner you are.        </p>
+        <h3 class="hygiene-info__content-list-title">Use For</h3>
+        <div class="hygiene-info__content-list-container">
+            <ul class="hygiene-info__content-list">
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Post-Workout</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Between clients</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Pre-Date Night</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Before the Parent-Teacher Meeting</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />After The Game</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Back from the beach</li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="hygiene-info__image hygiene-info__image--right">
+        <img src="{{ 'Real-Hustle.png' | asset_img_url: 'master' }}" />    
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Hustle Page",
+  "settings": [
+    {
+        "id": "heroTitle",
+        "type": "text",
+        "label": "Hero Title",
+        "default": "Hygiene"
+    },
+    {
+        "id": "heroParagraph",
+        "type": "text",
+        "label": "Hero Paragraph",
+        "default": "Your health. A regimen of how you stay true to yourself. These are daily actions that set yourself up for greatness. How you do anything is how you do everything."
+    },
+    {
+        "type": "checkbox",
+        "id": "btn-enabled",
+        "label": "Enabled Button"
+    },
+    {
+        "id": "heroBtnLink",
+        "type": "url",
+        "label": "Hero Button URL"
+    },
+    {
+        "id": "heroBtnText",
+        "type": "text",
+        "label": "Hero Button Text",
+        "default": "Button Text"
+    },
+    {
+        "id": "heroImage",
+        "type": "image_picker",
+        "label": "Hero Image"
+    }
+  ]
+}
+{% endschema %}

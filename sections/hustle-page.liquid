@@ -1,0 +1,561 @@
+<style>
+ 
+
+
+
+
+
+
+    .program-section {
+        background-color: #fff;
+    }
+
+    .program-section__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 800px) {
+        .program-section__header {
+            height: 100%;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
+    .program-section__header-title {
+        font-size: 60px;
+        line-height: 55px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin: 0;
+        font-weight: 400;
+    }
+    .program-section__header-paragraph {
+        font-family: "Cenzoflare";
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 1.1px;
+        text-align: center;
+        color: #98989A;
+        margin: 0;
+        max-width: 30%;
+    }
+
+    @media (max-width: 800px) { 
+        .program-section__header-paragraph {
+            max-width: 100%;
+        }
+    }
+
+
+
+    .program-section__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 1100px) {
+        .program-section__container {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+
+    .program-section__content {
+        max-width: 35%;
+        padding-left: 10vw;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: 1100px) {
+        .program-section__content {
+            max-width: unset;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .program-section__content {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
+
+    .program-section__content-title {
+        font-size: 100px;
+        line-height: 80px;
+        letter-spacing: 0px;
+        font-weight: 600;
+    }
+    .program-section__content-subtitle {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        font-weight: 600;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    .program-section__content-hr {
+        width: 50%;
+        border-color:#C7A478;
+        margin: 0;
+    }
+
+    .program-section__content-paragraph {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        letter-spacing: 0.54px;
+        color: #000;
+    }
+
+    .program-section__content-list-title {
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 1.1px;
+        font-family: "Cenzoflare";     
+    }
+
+    .program-section__content-list-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .program-section__content-list {
+        color: #000;
+        font-size: 18px;
+        letter-spacing: 0.54px;
+        line-height: 26px;
+    }
+
+    .program-section__content-list-item {
+        font-weight: 300 !important;
+    }
+
+
+
+
+    .quote-section {
+        background:#FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    .quote-section__title {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+        letter-spacing: 0.96px;
+        color: #171717;
+        max-width: 50%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    @media (max-width: 1000px) {
+        .quote-section__title {
+            max-width: 80%;
+        }
+    }
+
+    .quote-section__name {
+        color: #171717;
+        font-size: 24px;
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .quote-section__career {
+        color: #98989a;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.45px;
+        margin-top: 15px;
+    }
+
+
+
+
+
+
+
+
+
+    .insta-section {
+        background-color: #fff;
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .insta-section__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 34px;
+        flex-direction: column;
+    }
+
+    .insta-section__title {
+        font-size: 60px;
+        letter-spacing: 0;
+        line-height: 55px;
+    }
+    .insta-section__subtitle {
+        font-size: 22px;
+        letter-spacing: 1.1px;
+        line-height: 24px;
+        color: #98989A;
+        font-family: "Cenzoflare";
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .insta-section__container img {
+        margin: 10px;
+    }
+    @media (max-width: 800px) {
+        .insta-section__images-container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .hygiene-info__content-title--small {
+        font-size: 60px;
+    }
+
+    
+</style>
+
+<div class="innner-page__wrapper">
+    <div class="inner-page__hero">
+        <div class="inner-page__hero-content">
+            <h1 class="inner-page__hero-title">{{ section.settings.heroTitle }}</h1>
+            <p class="inner-page__hero-paragraph">{{ section.settings.heroParagraph }}</p>
+            {% if section.settings.btn-enabled %}
+            <a href="{{ section.settings.heroBtnLink }}">
+                <button class="btn-primary">{{ section.settings.heroBtnText }}</button>
+            </a>
+            {% endif %}
+        </div>
+        <div class="inner-page__hero-image">
+            <div class="inner-page__hero-overlay"></div>
+            <img src="{{ section.settings.heroImage | img_url: 'master' }}" />
+        </div>
+    </div>
+</div>
+
+
+<div class="program-section__header">
+    <h1 class="program-section__header-title">Journey to Greatness</h1>
+    <p class="program-section__header-paragraph">We created Hustle Clean to make a difference in the lives of those making differences.</p>
+</div>
+
+<!-- {% for block in section.blocks %}
+    <div class="program-section">
+
+        <div class="program-section__container">
+            <div class="program-section__content">
+                <h1 class="program-section__content-title">{{ block.settings.title }}</h1>
+                <p class="program-section__content-subtitle">{{ block.settings.subtitle }}</p>
+                <hr class="program-section__content-hr" />
+                <p class="program-section__content-paragraph">
+                    {{ block.settings.paragraph }}
+                </p>
+                <h3 class="program-section__content-list-title">{{ block.settings.listTitle }}</h3>
+                <div class="program-section__content-list-container">
+                    <ul class="program-section__content-list">
+                        <li class="program-section__content-list-item">{{ block.settings.listItem-one }}</li>
+                        <li class="program-section__content-list-item">{{ block.settings.listItem-two }}</li>
+                        <li class="program-section__content-list-item">{{ block.settings.listItem-three }}</li>
+                    </ul>
+                    <ul class="program-section__content-list">
+                        <li class="program-section__content-list-item">{{ block.settings.listItem-four }}</li>
+                        <li class="program-section__content-list-item">{{ block.settings.listItem-five }}</li>
+                        <li class="program-section__content-list-item">{{ block.settings.listItem-six }}</li>
+                    </ul>
+                </div>
+                <a href="{{ block.settings.btnLink }}">
+                    <button class="btn-primary">{{ block.settings.btnText }}</button>
+                </a>
+            </div>
+            <div class="program-section__image">
+                <img src="{{ block.settings.image | img_url: 'master' }}" />
+            </div>
+        </div>
+    </div>
+{% endfor %} -->
+
+
+<div class="hygiene-info__section">
+    <div class="hygiene-info__image">
+        <img src="{{ 'Real-Hustle-5.jpg' | asset_img_url: 'master' }}" />    
+    </div>
+    <div class="hygiene-info__content">
+        <h1 class="hygiene-info__content-title">Free Play</h1>
+        <!-- <p class="hygiene-info__content-subtitle"></p> --->
+        <hr class="hygiene-info__content-hr" />
+        <p class="hygiene-info__content-paragraph">
+            Our sports scholarship program provides opportunities for underserved youth to play sports. This community driven effort supports positive youth development and social accountability through team-oriented activities.         </p>
+        </p>
+        <h3 class="hygiene-info__content-list-title">UNLOCKING ACCESS BY PROVIDING</h3>
+        <div class="hygiene-info__content-list-container">
+            <ul class="hygiene-info__content-list">
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Scholarships</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Sports Equipment</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Uniforms</li>
+            </ul>
+            <ul class="hygiene-info__content-list">
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />In Person Training</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />And many more</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="hygiene-info__section hygiene-info__section--right">
+   
+    <div class="hygiene-info__content hygiene-info__content--right">
+        <h1 class="hygiene-info__content-title hygiene-info__content-title--small">#SHOWER2THEPEOPLE</h1>
+        <!-- <p class="hygiene-info__content-subtitle">
+            We see you. You’re hustling, you’re grinding.
+        </p> -->
+        <hr class="hygiene-info__content-hr" />
+        <p class="hygiene-info__content-paragraph">
+            Partnering with non-profit organizations, we deliver our anti-bacterial body wipes directly to communities lacking access to clean water, while bringing support and awareness to areas in need. 
+        </p>
+        <h3 class="hygiene-info__content-list-title">WE'VE TRAVELED TO:</h3>
+        <div class="hygiene-info__content-list-container">
+            <ul class="hygiene-info__content-list">
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Puerto Rico after Hurricane Maria</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Flint, Michigan</li>
+                <li class="hygiene-info__content-list-item"><img src="{{ 'Gold-X.png' | asset_img_url: 'small' }}" />Houston, Texas after Hurricane Harvey</li>
+
+            </ul>
+        </div>
+        <p class="hygiene-info__content-paragraph">We know body wipes can’t change the world, but we also know that giving someone the dignity of a shower substitute (when a shower isn’t accessible) goes a long way.</p>
+
+    </div>
+    <div class="hygiene-info__image hygiene-info__image--right">
+        <img src="{{ 'Real-Hustle-6.jpg' | asset_img_url: 'master' }}" />    
+    </div>
+</div>
+
+
+
+<div class="quote-section">
+    <img src="{{ 'Single-Quote-2.png' | asset_img_url: 'large' }}" />
+    <p class="quote-section__title">{{ section.settings.quote }}</p>
+    <h3 class="quote-section__name">{{ section.settings.quoteName }}</h3>
+    <h3 class="quote-section__career">{{ section.settings.quoteCareer }}</h3>
+</div>
+
+
+{% comment %} <div class="insta-section">
+    <h1 class="insta-section__title">{{ section.settings.instaTitle }}</h1>
+    <h3 class="insta-section__subtitle">{{ section.settings.instaSubtitle }}</h3>
+    <div class="insta-section__container">
+        <div class="insta-section__images-container">
+       <img src="{{ 'Insta-1.jpeg' | asset_img_url: 'medium' }}" /> 
+       <img src="{{ 'Insta-2.jpeg' | asset_img_url: 'medium' }}" /> 
+       <img src="{{ 'Insta-3.jpeg' | asset_img_url: 'medium' }}" /> 
+        </div>
+        <div class="insta-section__images-container">
+       <img src="{{ 'Insta-4.png' | asset_img_url: 'medium' }}" /> 
+       <img src="{{ 'Insta-5.jpeg' | asset_img_url: 'medium' }}" /> 
+       <img src="{{ 'Insta-6.jpeg' | asset_img_url: 'medium' }}" /> 
+            </div>
+    </div>
+   
+        <a href="{{ section.settings.instaBtnLink }}">
+        <button class="btn-primary">{{ section.settings.instaBtnText }}</button>
+        </a>    
+</div> {% endcomment %}
+
+
+{% schema %}
+{
+  "name": "Hustle Page",
+  "max_blocks": 5,
+  "settings": [
+    {
+        "id": "heroTitle",
+        "type": "text",
+        "label": "Hero Title",
+        "default": "Hustle"
+    },
+    {
+        "id": "heroParagraph",
+        "type": "text",
+        "label": "Hero Paragraph",
+        "default": "When the calling pulls you beyond your comfort zone. When you go for greatness and give it everything you’ve got. When you’re more than what they say you are and the world needs to know. This is hustle."
+    },
+    {
+        "type": "checkbox",
+        "id": "btn-enabled",
+        "label": "Enabled Button"
+    },
+    {
+        "id": "heroBtnLink",
+        "type": "url",
+        "label": "Hero Button URL"
+    },
+    {
+        "id": "heroBtnText",
+        "type": "text",
+        "label": "Hero Button Text",
+        "default": "Button Text"
+    },
+    {
+        "id": "heroImage",
+        "type": "image_picker",
+        "label": "Hero Image"
+    },
+    {
+        "id": "quote",
+        "type": "text",
+        "label": "Quote Content",
+        "default": "Luke Skywalker should have joined the dark side and conquered the galaxy with Darth Vader."
+    },
+    {
+        "id": "quoteName",
+        "type": "text",
+        "label": "Quote Name",
+        "default": "Justin Forset"
+    },
+    {
+        "id": "quoteCareer",
+        "type": "text",
+        "label": "Quote Career / Title",
+        "default": "Founder - Hustle Clean"
+    },
+    {
+        "id": "instaTitle",
+        "type": "text",
+        "label": "Instagram Title",
+        "default": "This is a headline"
+    },
+    {
+        "id": "instaSubtitle",
+        "type": "text",
+        "label": "Instagram Subtitle",
+        "default": "Subheadline"
+    },
+    {
+        "id": "instaBtnLink",
+        "type": "url",
+        "label": "Instagram Button Link"
+    },
+    {
+        "id": "instaBtnText",
+        "type": "text",
+        "label": "Instagram Button Text",
+        "default": "Follow Hustle Clean"
+    }    
+  ],
+  "blocks": [
+  {
+    "type": "program",
+    "name": "Program",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Title",
+        "default": "This Is A Headline Title"
+      },
+      {
+        "id": "subtitle",
+        "type": "text",
+        "label": "Subtitle",
+        "default": "We see you. You're hustling, you're grinding."
+      },
+      {
+        "id": "paragraph",
+        "type": "text",
+        "label": "Paragraph",
+        "default": "You’re taking kids to school, being a boss in your business, pushing your PB, getting that promotion. You are a high performer. So we’re not about to let you under perform when it comes to hygiene."
+      },
+      {
+        "id": "listTitle",
+        "type": "text",
+        "label": "List Title",
+        "default": "Use For"
+      },
+      {
+        "id": "listItem-one",
+        "type": "text",
+        "label": "List Item",
+        "default": "List Item"
+      },
+      {
+        "id": "listItem-two",
+        "type": "text",
+        "label": "List Item",
+        "default": "List Item"
+      },
+      {
+        "id": "listItem-three",
+        "type": "text",
+        "label": "List Item",
+        "default": "List Item"
+      },
+      {
+        "id": "listItem-four",
+        "type": "text",
+        "label": "List Item",
+        "default": "List Item"
+      },
+      {
+        "id": "listItem-five",
+        "type": "text",
+        "label": "List Item",
+        "default": "List Item"
+      },
+      {
+        "id": "listItem-six",
+        "type": "text",
+        "label": "List Item",
+        "default": "List Item"
+      },
+      {
+        "id": "btnLink",
+        "type": "url",
+        "label": "Button URL"
+      },
+      {
+        "id": "btnText",
+        "type": "text",
+        "label": "Button Text",
+        "default": "Sign Me Up"
+      },
+      {
+        "id": "image",
+        "type": "image_picker",
+        "label": "Image"
+      }
+    ]
+  }
+]
+}
+{% endschema %}

@@ -1,0 +1,235 @@
+.landing-page__header {
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  background-color: #000;
+}
+
+.landing-page__footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 66px;
+  padding-bottom: 30px;
+  background-color: #000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.landing-page__footer-logo {
+  max-width: 85px;
+}
+
+.landing-page__footer-paragraph {
+  max-width: 385px;
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 34px;
+}
+
+.landing-page__footer-title {
+  font-family: Cenzoflare;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #C7A478;
+  margin-bottom: 0;
+}
+
+.landing-page__footer-email {
+  margin-bottom: 48px;
+}
+
+.landing-page__footer-terms span {
+  color: #98989A;
+}
+
+.gma-landing__wrapper {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (max-width: 970px) {
+  .gma-landing__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+.gma-landing__content-container {
+  margin-right: 100px;
+}
+
+@media (max-width: 970px) {
+  .gma-landing__content-container {
+    margin-right: 0;
+  }
+}
+
+.gma-landing__title {
+  font-family: Teko;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 0;
+  max-width: 550px;
+}
+
+@media (max-width: 640px) {
+  .gma-landing__title {
+    font-size: 66px;
+    line-height: 62px;
+  }
+}
+
+.gma-landing__subtitle {
+  font-family: Cenzoflare;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .gma-landing__subtitle {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+.gma-landing__list {
+  color: #000;
+}
+
+.gma-landing__list li {
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 10px 0;
+}
+
+@media (max-width: 640px) {
+  .gma-landing__list li {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.gma-landing__content-images {
+  margin-top: 34px;
+  display: flex;
+}
+
+.gma-landing__content-images img {
+  height: auto;
+}
+
+.gma-landing__content-images div:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.gma-landing__form {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  background-color: #D0B787;
+  padding: 45px 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Source Sans Pro;
+}
+
+@media (max-width: 970px) {
+  .gma-landing__form {
+    margin-top: 34px;
+    padding: 26px 22px;
+  }
+}
+
+.gma-landing__form .gma-landing__form-title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 340px;
+}
+
+@media (max-width: 640px) {
+  .gma-landing__form .gma-landing__form-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.gma-landing__form label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.gma-landing__form .gma-landing__form-terms {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gma-landing__form .gma-landing__form-terms a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.gma-landing__form input[type="text"] {
+  max-width: 400px;
+}
+
+.gma-landing__form input[type="submit"] {
+  background-color: #000;
+  border: none;
+  color: tan;
+  text-transform: uppercase;
+  font-family: Cenzoflare;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  width: 172px;
+}
+
+.collection-header h1 {
+  color: #fff;
+  margin-top: 170px;
+}
+
+.product-card .price .price-item {
+  color: #fff;
+}
+
+#Collection .grid {
+  margin-bottom: 22px;
+}

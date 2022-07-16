@@ -1,0 +1,1535 @@
+{
+  "current": {
+    "color_text": "#ffffff",
+    "color_body_text": "#ffffff",
+    "color_body_bg": "#171717",
+    "favicon": "shopify:\/\/shop_images\/Favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Hustle_Clean_Logo_-_Dark_Backgrounds.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#000000",
+    "checkout_sidebar_background_color": "#ffffff",
+    "checkout_accent_color": "#000000",
+    "checkout_button_color": "#c7a478",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/Hustle_Clean_Logo_-_Dark_Backgrounds.png",
+          "logo_max_width": 100,
+          "main_linklist": "new-main-menu",
+          "main_linklist_mobile": "mobile-menu",
+          "message": true,
+          "home_page_only": true,
+          "message_text": "Free Shipping on orders over $40. No code necessary.",
+          "message_link": "",
+          "color_bg": "#3a3a3a",
+          "color_text": "#ffffff"
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": ""
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
+          },
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
+          },
+          "feature-columns-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "quotes-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "quotes-0",
+          "quotes-1",
+          "quotes-2"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "blocks": {
+          "image-bar-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "cta_label": ""
+            }
+          },
+          "image-bar-2": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "image-bar-0",
+          "image-bar-1",
+          "image-bar-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "e95f6a36-f665-4af5-846b-c5a32d308b82": {
+            "type": "logo",
+            "settings": {
+              "logoImage": "shopify:\/\/shop_images\/Hustle_Clean_Logo_-_Dark_Backgrounds.png",
+              "logoText": "<p>Have a question? <\/p><p>Email us at support@hustleclean.com. <\/p>"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "menu": "footer-a",
+              "menuTitle": "Products",
+              "menuB": "footer-b",
+              "menuBTitle": "About"
+            }
+          }
+        },
+        "block_order": [
+          "e95f6a36-f665-4af5-846b-c5a32d308b82",
+          "footer-0"
+        ],
+        "settings": {
+          "newsletterTitle": "Join our newsletter to kick off each month with Hustle Clean",
+          "newsletterTitleB": "on your team.",
+          "show_payment_icons": false,
+          "color_footer_bg": "#171717",
+          "color_footer_text": "#ffffff",
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "press": {
+        "type": "press",
+        "blocks": {
+          "72d6ccc4-f923-43ea-adf3-e8790224c2ff": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Womens_Running_Logo_ae10e61e-117c-4d89-a46a-b6d3fff02bd4.png"
+            }
+          },
+          "50174199-0a38-4230-8404-c7df6ecc1579": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Refinery_29_Logo_5ecab5d4-07b2-4532-8514-86dd399ebdd8.png"
+            }
+          },
+          "cbb2a929-b11e-46db-9224-34599e9972a0": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Good_Morning_America_Logo.png"
+            }
+          },
+          "857d3a77-b23b-4b28-8a6a-8499ec3705ff": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Buzzfeed_Logo.png"
+            }
+          },
+          "408871f9-b702-47d9-ae29-ba8cf6a7f08d": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/ESPN_1aed7373-eab8-49c0-bb87-4053564c451f.png"
+            }
+          }
+        },
+        "block_order": [
+          "72d6ccc4-f923-43ea-adf3-e8790224c2ff",
+          "50174199-0a38-4230-8404-c7df6ecc1579",
+          "cbb2a929-b11e-46db-9224-34599e9972a0",
+          "857d3a77-b23b-4b28-8a6a-8499ec3705ff",
+          "408871f9-b702-47d9-ae29-ba8cf6a7f08d"
+        ],
+        "settings": {
+          "title": "As Seen On"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": true,
+          "show_vendor": false,
+          "enable_payment_button": false,
+          "show_share_buttons": false,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": false,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "product-faq": {
+        "type": "product-faq",
+        "settings": {
+          "text": "Learn More",
+          "url": "#"
+        }
+      },
+      "alternating-feature": {
+        "type": "alternating-feature",
+        "settings": {}
+      },
+      "testimonials": {
+        "type": "testimonials",
+        "blocks": {
+          "dba279ea-3795-4e38-90bb-514187e68404": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Testimonial.jpg",
+              "content": "It’s getting hot and sweaty in NYC and having these in my purse will really help!",
+              "name": "HEIDI GARDNER, ACTRESS & COMEDIAN"
+            }
+          },
+          "ab9bdede-97a5-4a40-8645-78d05cd5d34c": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Lecrae.jpg",
+              "content": "It cools me down and freshens me up, then I’m ready to go and meet people. I don’t know what I’d do without it.",
+              "name": "Lecrae, Hip Hop Artist"
+            }
+          },
+          "f9226f5f-3de9-4e42-9d8d-78a9ef7843c2": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Alicia-Montano.png",
+              "content": "I’m a 24\/7 athlete and a 24\/7 mom. Having the Body Wipe with me wherever I go… It’s a lifeline for me.",
+              "name": "Alysia Montano, US Olympic Athlete"
+            }
+          }
+        },
+        "block_order": [
+          "dba279ea-3795-4e38-90bb-514187e68404",
+          "ab9bdede-97a5-4a40-8645-78d05cd5d34c",
+          "f9226f5f-3de9-4e42-9d8d-78a9ef7843c2"
+        ],
+        "settings": {}
+      },
+      "16164281800ebfadb6": {
+        "type": "video",
+        "disabled": true,
+        "settings": {
+          "image_position": "center center",
+          "video_link": "https:\/\/www.youtube.com\/watch?v=0u_bBWjKeII",
+          "show_overlay": false,
+          "style": "background",
+          "height": "medium",
+          "video_title": "The dream is free. The Hustle is sold separately.",
+          "heroSubtitle": "We fought for Hustle Clean to empower you in the pursuit of your own purpose.",
+          "text_size": "medium"
+        }
+      },
+      "1616430640d13474c1": {
+        "type": "blog-gallery",
+        "disabled": true,
+        "settings": {
+          "title-1": "helping the survivors of haiti",
+          "subtitle-1": "donate hygiene packs to haiti and hustle clean will match it",
+          "paragraph": "As part of our ongoing #Shower2thePeople program, we are already dedicating part of our inventory to be shipped to Haiti as soon as we're able. Donate Hustle Clean sanitizing products to the Haiti care package and Hustle Clean will match it, so you can send life-saving materials to the survivors, medical staff, and aid workers who are on the ground. Help us deliver body wipes directly to communities lacking access to clean water.",
+          "image-1": "shopify:\/\/shop_images\/Screen_Shot_2021-08-31_at_1.51.10_PM.png",
+          "btnText-1": "DONATE NOW",
+          "btnLink-1": "https:\/\/hustleclean.com\/products\/haiti-earthquake-donation-match-body-wipes-10pk?variant=39432839987270",
+          "title-2": "LIFE SAVING HYGIENE PACKS",
+          "subtitle-2": "BODY WIPES AND HAND SANITIZERS ARE ANTIBACTERIAL AND KILL 99.99% OF GERMS AND BACTERIA.",
+          "image-2": "shopify:\/\/shop_images\/Screen_Shot_2021-08-31_at_1.47.22_PM.png",
+          "btnText-2": "DONATE NOW",
+          "btnLink-2": "https:\/\/hustleclean.com\/products\/haiti-earthquake-donation-match-body-wipes-10pk?variant=39432839987270",
+          "title-3": "DELIVERY",
+          "subtitle-3": "We are partnering with Mission of Hope to get products down to Haiti where they're most needed.",
+          "image-3": "shopify:\/\/shop_images\/Screen_Shot_2021-08-31_at_1.49.09_PM.png",
+          "btnText-3": "DONATE NOW",
+          "btnLink-3": "https:\/\/hustleclean.com\/products\/haiti-earthquake-donation-match-body-wipes-10pk?variant=39432839987270"
+        }
+      },
+      "161643423566a0faf3": {
+        "type": "product-focus",
+        "settings": {
+          "word-one": "The",
+          "word-two": "Body",
+          "word-three": "Wipe",
+          "subtitle": "Stop sweating the small stuff.",
+          "paragraph": "Hustle Clean saves you time to focus on what really matters. And it leaves you smelling as crisp and clean as your ambition. Available in unscented, fresh, and lavender.",
+          "btnLink": "shopify:\/\/products\/the-body-wipe-1",
+          "btnText": "Shop Now",
+          "image": "shopify:\/\/shop_images\/Homepage_Hero_Images_-_The_Body_Wipe.jpg",
+          "imageMobile": "shopify:\/\/shop_images\/Body-wipes.png"
+        }
+      },
+      "1616523353d6ae666b": {
+        "type": "product-feature",
+        "settings": {
+          "word-one": "The",
+          "word-two": "Face",
+          "word-three": "Wipe",
+          "subtitle": "Make every move count.",
+          "paragraph": "You only get one first impression, and the world should see your authentic self. Revitalize your skin to radiate like your biggest dreams.",
+          "btnLink": "shopify:\/\/products\/the-face-wipe-1",
+          "btnText": "Shop Now",
+          "image": "shopify:\/\/shop_images\/Homepage_Hero_Images_-_The_Face_Wipe.jpg"
+        }
+      },
+      "1616525486acc29771": {
+        "type": "homepage-testimonials",
+        "blocks": {
+          "6e87f90a-536d-447a-b98d-860b6677e43f": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Alicia-Montano.png",
+              "paragraph": "I’m a 24\/7 athlete and 24\/7 mom. Having the body wipe with me wherever I go… It’s a lifeline for me",
+              "name": "Alysia Montaño",
+              "title": "US Olympic Athlete"
+            }
+          },
+          "3a728446-05ba-4bb5-84d4-5e3fafa1da6f": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Testimonial.jpg",
+              "paragraph": "It’s getting hot and sweaty in NYC and having these in my purse will really help!",
+              "name": "Heidi Gardner",
+              "title": "Actress & Comedian"
+            }
+          },
+          "d5895c91-7578-43bc-8da3-514e54e114e9": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Lecrae.jpg",
+              "paragraph": "It cools me down and freshens me up, then I’m ready to go and meet people. I don’t know what I’d do without it.",
+              "name": "Lecrae",
+              "title": "Hip Hop Artist"
+            }
+          }
+        },
+        "block_order": [
+          "6e87f90a-536d-447a-b98d-860b6677e43f",
+          "3a728446-05ba-4bb5-84d4-5e3fafa1da6f",
+          "d5895c91-7578-43bc-8da3-514e54e114e9"
+        ],
+        "settings": {}
+      },
+      "1616598352a816318c": {
+        "type": "blog-feature",
+        "settings": {
+          "word-one-a": "THE POWER OF",
+          "word-two-a": "",
+          "word-three-a": "YOUR PURCHASE",
+          "paragraph-a": "Every Hustle Clean purchase helps us provide athletic scholarships and hygiene products to underserved communities through our Free Play and Shower2ThePeople programs. We help you keep the hustle going, while you help us have real community impact.",
+          "btnLink-a": "shopify:\/\/pages\/impact",
+          "btnText-a": "Learn More",
+          "image-a": "shopify:\/\/shop_images\/Hustle_Clean_Split_Section_Images_-_Impact.jpg",
+          "word-one-b": "ATHLETE & TRAINER",
+          "word-two-b": "APPROVED",
+          "word-three-b": "",
+          "paragraph-b": "Our wipes get the job done, no matter where the day takes you. They kill 99.9% of germs while soothing skin with aloe, vitamin E and witch hazel, so you can get shower clean without the shower time.",
+          "btnLink-b": "shopify:\/\/pages\/hygiene",
+          "btnText-b": "Learn More",
+          "image-b": "shopify:\/\/shop_images\/Hustle_Clean_Split_Section_Images_-_Standards.jpg"
+        }
+      },
+      "1616601103a611fb3a": {
+        "type": "our-story",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Our-Story.png",
+          "title": "Inspiring the Resilient and Relentless to Keep Grinding",
+          "paragraph": "When Justin Forsett, Wale Forrester, and Wendell Hunter met in the locker room at UC Berkeley, they didn’t know then that they’d go on to hustle together off the football field. What began as a body wipe to get them from practice to class on time became a mission to motivate the masses. Enter: Hustle Clean, a self-care movement at the intersection of hustle and hygiene.",
+          "btnLink": "shopify:\/\/pages\/story",
+          "btnText": "Learn More"
+        }
+      },
+      "1616604012856454a2": {
+        "type": "press",
+        "blocks": {
+          "301220e1-1714-4e30-b320-c948880d1897": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Womens_Running_Logo_ae10e61e-117c-4d89-a46a-b6d3fff02bd4.png"
+            }
+          },
+          "69373087-9d8e-4275-b875-281e48f06003": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Refinery_29_Logo_5ecab5d4-07b2-4532-8514-86dd399ebdd8.png"
+            }
+          },
+          "7106bc6f-83b6-4e9a-a323-ec473df087be": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Good_Morning_America_Logo.png"
+            }
+          },
+          "86b74707-4fe3-49d8-a690-e5f7a06c5108": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Buzzfeed_Logo.png"
+            }
+          },
+          "98289786-52cb-45d2-8b4d-13b7e51242e2": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/ESPN_1aed7373-eab8-49c0-bb87-4053564c451f.png"
+            }
+          }
+        },
+        "block_order": [
+          "301220e1-1714-4e30-b320-c948880d1897",
+          "69373087-9d8e-4275-b875-281e48f06003",
+          "7106bc6f-83b6-4e9a-a323-ec473df087be",
+          "86b74707-4fe3-49d8-a690-e5f7a06c5108",
+          "98289786-52cb-45d2-8b4d-13b7e51242e2"
+        ],
+        "settings": {
+          "title": "As Seen On"
+        }
+      },
+      "1616624087b3cb99f7": {
+        "type": "stores",
+        "blocks": {
+          "f267b9e3-5677-405d-818d-2a4ae4da92cf": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Target_logo.png",
+              "url": "https:\/\/www.target.com\/b\/hustle-clean\/-\/N-q643lerkaix"
+            }
+          },
+          "f6e059e9-0fe3-4683-b272-6333392cbb9a": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Amazon_logo.png",
+              "url": "https:\/\/www.amazon.com\/stores\/Hustle+Clean\/page\/5D588357-91E5-464F-BBEB-4080DCED5E27?ref_=ast_bln"
+            }
+          },
+          "afb88221-9387-4817-a123-50be71424653": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Walmart_logo.png",
+              "url": "https:\/\/www.walmart.com\/ip\/Hustle-Clean-Fresh-Scent-Individually-Wrapped-Adult-Body-Wipes-10-Count\/247075913"
+            }
+          }
+        },
+        "block_order": [
+          "f267b9e3-5677-405d-818d-2a4ae4da92cf",
+          "f6e059e9-0fe3-4683-b272-6333392cbb9a",
+          "afb88221-9387-4817-a123-50be71424653"
+        ],
+        "settings": {}
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 3,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": false,
+          "tags_enable": true
+        }
+      },
+      "hygiene-page": {
+        "type": "hygiene-page",
+        "settings": {
+          "heroTitle": "Our Standards",
+          "heroParagraph": "Hustle Clean uses the highest-quality ingredients tested with professional athletes, trainers and doctors. No harmful parabens, sulfates, phthalates or alcohol, so your skin won't dry out. Just calming aloe vera, vitamin E and witch hazel to refresh and moisturize.",
+          "btn-enabled": false,
+          "heroBtnLink": "",
+          "heroBtnText": "Button Text",
+          "heroImage": "shopify:\/\/shop_images\/Hustle_Clean_Page_Hero_Images_-_Product_Standards.jpg"
+        }
+      },
+      "faq-section": {
+        "type": "faq-section",
+        "blocks": {
+          "62bfc62b-ccad-437b-81cc-3dc063476d73": {
+            "type": "heading",
+            "settings": {
+              "title": "Shipping & Orders"
+            }
+          },
+          "711b808c-c152-4a21-93d9-58ead4f82c4b": {
+            "type": "faq",
+            "settings": {
+              "question": "How do I qualify for free shipping?",
+              "answer": "With each Hustle Clean purchase over $40, please enjoy free shipping on us. For orders under $40, your shipping estimate will appear when you go through checkout."
+            }
+          },
+          "d0404e33-1b95-40a0-b05b-82698fd385d8": {
+            "type": "faq",
+            "settings": {
+              "question": "Where does Hustle Clean ship to?",
+              "answer": "At this time, Hustle Clean ships to the contiguous United States, Hawaii and Alaska."
+            }
+          },
+          "7e468f47-3809-405f-a1e7-044f05de94eb": {
+            "type": "faq",
+            "settings": {
+              "question": "How can I track\/check the status of my order?",
+              "answer": "We send a tracking number via email (or via text if selected) after you place your order. You can check the status of your order at any time by referencing this tracking number."
+            }
+          },
+          "9d671a0b-603d-4e61-b367-57ae5498ed70": {
+            "type": "faq",
+            "settings": {
+              "question": "When will I receive my products?",
+              "answer": "Hang tight! All orders are expected to arrive between 3-7 business days. Longer shipping times may occur over the weekend and holidays."
+            }
+          },
+          "45df038b-f420-4409-8501-d2e7c6b761b3": {
+            "type": "faq",
+            "settings": {
+              "question": "How can I change my order?",
+              "answer": "We always try to process and ship orders as quickly as possible. If you realize there is a problem after placing an order, you can edit it directly in your Account page if you’ve created one or call us at 510-289-6820, so we can try to cancel or change the order before it ships. Once it ships, we are unable to cancel it."
+            }
+          },
+          "496aa1e1-be8b-4093-b27b-7eab48c3e750": {
+            "type": "heading",
+            "settings": {
+              "title": "Refund & Return Policy"
+            }
+          },
+          "ebf574ce-5007-4470-b652-39d089e0f0c6": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return & refund policy?",
+              "answer": "We guarantee 100% customer satisfaction. If you have any issue at all, contact us at support@hustleclean.com, and we’ll take care of you."
+            }
+          },
+          "5e712651-99cf-4f52-abdc-479de58a848e": {
+            "type": "heading",
+            "settings": {
+              "title": "My Account"
+            }
+          },
+          "fefb9615-ae35-4805-9e77-ae4e664ae453": {
+            "type": "faq",
+            "settings": {
+              "question": "How do I log in to my account?",
+              "answer": "If you created an account with us, you can click on the Account icon in the top right hand corner of the website. You will be prompted to enter your email address and password associated with the account."
+            }
+          },
+          "75bfeedd-25d4-41cf-b4d3-89ae47026627": {
+            "type": "heading",
+            "settings": {
+              "title": "Product"
+            }
+          },
+          "0b537e81-ed62-4915-a961-36c6f6385c31": {
+            "type": "faq",
+            "settings": {
+              "question": "How big is each Hustle Clean Body Wipe?",
+              "answer": "Each extra-thick, extra-big body wipe is 9 x 8 inches and about four times the thickness of a baby wipe. You only need one to clean your entire body."
+            }
+          },
+          "c0770a8a-7032-444d-9e44-eeef8979d2a8": {
+            "type": "faq",
+            "settings": {
+              "question": "How many Body Wipes come in a box?",
+              "answer": "Each Body Wipe box contains 10 individually-wrapped wipes that are the perfect on-the-go workout companion."
+            }
+          },
+          "d7017592-a06a-4799-95fe-3c5245bcd675": {
+            "type": "faq",
+            "settings": {
+              "question": "Does ShowerPill still exist? Are the Hustle Clean wipes the same as the ShowerPill wipes?",
+              "answer": "In 2020, we updated our brand name from ShowerPill to Hustle Clean. All of the products have remained the same throughout this transition. This name change is meaningful to us, too. We want to build a life-changing brand that powers a personal wellness movement at the intersection of hustle and hygiene—and Hustle Clean more effectively captures this aspiration."
+            }
+          },
+          "f98ffbf5-232d-4803-96d7-d0520f0f952e": {
+            "type": "faq",
+            "settings": {
+              "question": "What are the ingredients in a Hustle Clean Body Wipe?",
+              "answer": "Only the good stuff! We only use the highest quality ingredients and test our products with professional athletes, trainers and doctors. We include witch hazel, aloe and Vitamin E to moisturize skin and benzalkonium chloride, an FDA-approved active ingredient, to kill 99.9% of germs. And, we never use parabens, sulfates, phthalates or alcohol."
+            }
+          },
+          "3d6f5b28-aed3-4dd6-aa29-2d609d0e7041": {
+            "type": "faq",
+            "settings": {
+              "question": "Does a Hustle Clean Body Wipe replace a shower?",
+              "answer": "No, it most certainly does not! The wipes were created to serve as a hygiene supplement for when you don’t have time to take a shower or lack access to one."
+            }
+          },
+          "20bee232-1ea9-44db-9b68-7ea66e624da2": {
+            "type": "faq",
+            "settings": {
+              "question": "Why are Hustle Clean Body Wipes antibacterial? I’ve heard bacteria can actually be good for you.",
+              "answer": "Yes, in some cases, bacteria can be good for you. However, contracting contagious (and potentially dangerous) sweat-related infections like staph, E. coli and MRSA, which are often born inside the gym and locker room, is preventable. We created a product that kills those nasty germs, kind of like how you use hand sanitizer in a pinch. There’s no need to let a little dirt, sweat or grime get in the way of achieving your goals."
+            }
+          },
+          "429664c5-c37f-49c4-a312-a0914c5ed6d4": {
+            "type": "faq",
+            "settings": {
+              "question": "Are Hustle Clean Body Wipes flushable?",
+              "answer": "No. Throw used wipes in the trash can—your plumber will thank you."
+            }
+          },
+          "706d1322-d2c5-471e-91e2-f35f78f7f622": {
+            "type": "faq",
+            "settings": {
+              "question": "Are there any harmful ingredients in a Hustle Clean Body Wipe?",
+              "answer": "Rest assured that our formulation is simple and safe. No parabens, sulfates, phthalates or alcohol. Our active ingredient is FDA-approved to kill germs and used in many common over-the-counter products."
+            }
+          },
+          "657d461f-7c0f-4a7b-ac00-36bfa63a1aea": {
+            "type": "faq",
+            "settings": {
+              "question": "Can I use the Body Wipes and Face Wipes on sensitive skin?",
+              "answer": "Our wipes are thoughtfully formulated, dermatologist-tested and hypoallergenic, which make them perfectly fine to use on sensitive skin."
+            }
+          },
+          "43f493c4-37cb-46da-847d-06a0fe5123fa": {
+            "type": "faq",
+            "settings": {
+              "question": "Do Hustle Clean Body Wipes have a scent?",
+              "answer": "Hustle Clean Body Wipes come in two scents, Fresh or Lavender, or Unscented. We describe both scents as unisex, light and fresh. And, our customers agree."
+            }
+          },
+          "c62c67d2-d21c-4aeb-8417-bc7db25aa182": {
+            "type": "faq",
+            "settings": {
+              "question": "Can I use a Hustle Clean Body Wipe \"down there\"?",
+              "answer": "Hustle Clean products are safe for the skin, but what’s safe for the skin isn’t necessarily best for down there. Health experts suggest washing with water to clean down there, so we don’t advise using any wipes."
+            }
+          },
+          "0f42fbb1-bf83-44c5-a21a-94de5518b23b": {
+            "type": "faq",
+            "settings": {
+              "question": "Are Hustle Clean Body Wipes safe for kids to use?",
+              "answer": "Absolutely! All three founders rely on the product to wipe down their kids between bath times. In fact, our active ingredient is safely found in many baby products."
+            }
+          },
+          "d2b4e916-7ef3-44b8-84b8-92991bf537cd": {
+            "type": "faq",
+            "settings": {
+              "question": "Why do I need Hustle Clean Body Wipes when I can just use a baby wipe?",
+              "answer": "Where do we begin? First, you would need about 10 baby wipes to do the job of one Hustle Clean wipe. Plus, our wipes contain the highest quality ingredients and a special formulation created to kill germs on the body without drying out your skin. Not to mention, they are individually wrapped for on-the-go use."
+            }
+          },
+          "6943e84b-d549-4307-99f1-b5f2cead88e4": {
+            "type": "faq",
+            "settings": {
+              "question": "Why is each Hustle Clean Body Wipe individually packaged? That seems wasteful.",
+              "answer": "We hear you, and we’re constantly reimaging ways to improve our product and lessen our impact on the world. Hustle Clean was created with the on-the-go fitness enthusiast in mind, allowing them to toss an individually wrapped wipe (not a whole box) inside their gym bag or running belt along with their protein bar. Plus, the individual packaging prevents wipes from drying out and losing its efficacy."
+            }
+          },
+          "2f67a8cd-917d-4055-9f41-34942036fe63": {
+            "type": "heading",
+            "settings": {
+              "title": "About Us"
+            }
+          },
+          "5fde9885-bef7-4b12-a78c-ac47e05a110c": {
+            "type": "faq",
+            "settings": {
+              "question": "Where can I buy Hustle Clean products?",
+              "answer": "You can find us at: <a href=\"https:\/\/hustleclean.com\">HustleClean.com<\/a>, <a href=\"https:\/\/amazon.com\">Amazon<\/a>, and <a href=\"https:\/\/target.com%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20\">Target<\/a> in the Sporting Goods aisle"
+            }
+          },
+          "0f2b251e-1d16-4d23-93ec-6b05675c0f79": {
+            "type": "faq",
+            "settings": {
+              "question": "Who can I contact about a press inquiry?",
+              "answer": "Please reach out to us at support@hustleclean.com. We would love to hear from you."
+            }
+          },
+          "e1713575-4a23-4d59-af45-75a76314c95b": {
+            "type": "faq",
+            "settings": {
+              "question": "Where are you located?",
+              "answer": "Our office is located in Frisco, TX."
+            }
+          },
+          "8aeedeaf-0853-4ce8-ac2f-e69559ee99c1": {
+            "type": "faq",
+            "settings": {
+              "question": "Does Hustle Clean have any community initiatives or donation programs?",
+              "answer": "Yes! Giving back to our community is the heart and soul of our business. We serve our community via two programs: Free Play, which provides sports scholarships, sports equipment and uniforms, and in-person training sessions to underserved youth, and Shower2ThePeople, which delivers Hustle Clean body wipes to communities lacking access to clean water. Every purchase you make helps us power these programs. <a href=\"\/pages\/hustle\" style=\"color:blue;\">Learn more. <\/a>"
+            }
+          },
+          "a099d405-f155-4174-9179-7df0f76f1840": {
+            "type": "faq",
+            "settings": {
+              "question": "Does Hustle Clean plan to roll out additional products?",
+              "answer": "Yes! We have been dreaming up some exciting new products that will be coming soon. Follow us on social or sign up for our newsletter at the bottom of the homepage to stay updated and get early access."
+            }
+          },
+          "df4b763e-a89f-446f-b2b3-02a4fa51d948": {
+            "type": "heading",
+            "settings": {
+              "title": "Wholesale and Events"
+            }
+          },
+          "f01bfa11-efca-441b-8ef2-21e961962b77": {
+            "type": "faq",
+            "settings": {
+              "question": "Do you have a wholesale program?",
+              "answer": "Let’s talk! Fill out our wholesale application linked in our footer and we'll get back to you as soon as possible."
+            }
+          },
+          "d42c2725-5372-493e-9ef9-c89e44543846": {
+            "type": "faq",
+            "settings": {
+              "question": "Do you sponsor events or athletes?",
+              "answer": "We love hearing about partnership, event and sponsorship opportunities with our community.  Please send an email to support@hustleclean.com with details and the specific request. If there is a good fit after reviewing your email, we will follow up to discuss it further."
+            }
+          }
+        },
+        "block_order": [
+          "62bfc62b-ccad-437b-81cc-3dc063476d73",
+          "711b808c-c152-4a21-93d9-58ead4f82c4b",
+          "d0404e33-1b95-40a0-b05b-82698fd385d8",
+          "7e468f47-3809-405f-a1e7-044f05de94eb",
+          "9d671a0b-603d-4e61-b367-57ae5498ed70",
+          "45df038b-f420-4409-8501-d2e7c6b761b3",
+          "496aa1e1-be8b-4093-b27b-7eab48c3e750",
+          "ebf574ce-5007-4470-b652-39d089e0f0c6",
+          "5e712651-99cf-4f52-abdc-479de58a848e",
+          "fefb9615-ae35-4805-9e77-ae4e664ae453",
+          "75bfeedd-25d4-41cf-b4d3-89ae47026627",
+          "0b537e81-ed62-4915-a961-36c6f6385c31",
+          "c0770a8a-7032-444d-9e44-eeef8979d2a8",
+          "d7017592-a06a-4799-95fe-3c5245bcd675",
+          "f98ffbf5-232d-4803-96d7-d0520f0f952e",
+          "3d6f5b28-aed3-4dd6-aa29-2d609d0e7041",
+          "20bee232-1ea9-44db-9b68-7ea66e624da2",
+          "429664c5-c37f-49c4-a312-a0914c5ed6d4",
+          "706d1322-d2c5-471e-91e2-f35f78f7f622",
+          "657d461f-7c0f-4a7b-ac00-36bfa63a1aea",
+          "43f493c4-37cb-46da-847d-06a0fe5123fa",
+          "c62c67d2-d21c-4aeb-8417-bc7db25aa182",
+          "0f42fbb1-bf83-44c5-a21a-94de5518b23b",
+          "d2b4e916-7ef3-44b8-84b8-92991bf537cd",
+          "6943e84b-d549-4307-99f1-b5f2cead88e4",
+          "2f67a8cd-917d-4055-9f41-34942036fe63",
+          "5fde9885-bef7-4b12-a78c-ac47e05a110c",
+          "0f2b251e-1d16-4d23-93ec-6b05675c0f79",
+          "e1713575-4a23-4d59-af45-75a76314c95b",
+          "8aeedeaf-0853-4ce8-ac2f-e69559ee99c1",
+          "a099d405-f155-4174-9179-7df0f76f1840",
+          "df4b763e-a89f-446f-b2b3-02a4fa51d948",
+          "f01bfa11-efca-441b-8ef2-21e961962b77",
+          "d42c2725-5372-493e-9ef9-c89e44543846"
+        ],
+        "settings": {
+          "title": "FAQs"
+        }
+      },
+      "hustle-page": {
+        "type": "hustle-page",
+        "blocks": {
+          "07a30ee8-5669-4b55-a3f3-5f2b658c98d0": {
+            "type": "program",
+            "settings": {
+              "title": "This Is A Headline Title",
+              "subtitle": "We see you. You're hustling, you're grinding.",
+              "paragraph": "You’re taking kids to school, being a boss in your business, pushing your PB, getting that promotion. You are a high performer. So we’re not about to let you under perform when it comes to hygiene.",
+              "listTitle": "Use For",
+              "listItem-one": "List Item",
+              "listItem-two": "List Item",
+              "listItem-three": "List Item",
+              "listItem-four": "List Item",
+              "listItem-five": "List Item",
+              "listItem-six": "List Item",
+              "btnLink": "",
+              "btnText": "Sign Me Up",
+              "image": "shopify:\/\/shop_images\/hustle_clean_body_wipe_being_used_by_man_at_gym.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "07a30ee8-5669-4b55-a3f3-5f2b658c98d0"
+        ],
+        "settings": {
+          "heroTitle": "OUR IMPACT",
+          "heroParagraph": "We're a purpose-driven team inspired to help the next wave of holistic hustlers bring their dreams to fruition with clean and convenient products. The dreamers inspired to do more and be more, not only for themselves but also for their families and communities.",
+          "btn-enabled": false,
+          "heroBtnLink": "",
+          "heroBtnText": "page_title_enable",
+          "heroImage": "shopify:\/\/shop_images\/Hustle_Clean_Split_Section_Images_-_Impact.jpg",
+          "quote": " “When things affect our fellow Americans or our city or children, it's up to us to step up to the call. We need to be socially conscious and engaged.”",
+          "quoteName": "Wale Forrester",
+          "quoteCareer": "Co-Founder - Hustle Clean",
+          "instaTitle": "We're on Instagram!",
+          "instaSubtitle": "A Behind-the-Grind Peek Join the hustle. We’re in it to win it, together.",
+          "instaBtnLink": "https:\/\/instagram.com\/hustleclean",
+          "instaBtnText": "Follow Hustle Clean"
+        }
+      },
+      "homepage-testimonials": {
+        "type": "homepage-testimonials",
+        "blocks": {
+          "a8fb0b3a-35b0-4c1a-9f42-98b40c02fe4a": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Alicia-Montano.png",
+              "paragraph": "I'm a 24\/7 athlete and 24\/7 mom. Having the body wipe with me whenever I go... It's a lifeline for me.",
+              "name": "Alysia Montaño",
+              "title": "US Olympic Athlete"
+            }
+          },
+          "8974ee61-5d0e-4eeb-bd00-ff165cc28d7f": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Testimonial.jpg",
+              "paragraph": "It's getting hot and sweaty in NYC and having these in my purse will really help!",
+              "name": "Heidi Gardner",
+              "title": "Actress & Comedian"
+            }
+          },
+          "895bed35-21b8-4c25-9d81-4dd52b292730": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Lecrae.jpg",
+              "paragraph": "It cools me down and freshens me up, then I'm ready to go and meet people. I don't know what I'd do without it.",
+              "name": "Lecrae",
+              "title": "Hip Hop Artist"
+            }
+          }
+        },
+        "block_order": [
+          "a8fb0b3a-35b0-4c1a-9f42-98b40c02fe4a",
+          "8974ee61-5d0e-4eeb-bd00-ff165cc28d7f",
+          "895bed35-21b8-4c25-9d81-4dd52b292730"
+        ],
+        "settings": {}
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "settings": {
+          "slideshow_height": "adapt",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
+          "autorotate": false,
+          "autorotate_speed": 5
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
+      },
+      "quick-shop": {
+        "type": "quick-shop",
+        "settings": {}
+      },
+      "1618512238a63d6dcc": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Hustle_Clean_Hero_Image_-_5.jpg",
+          "imageMobile": "shopify:\/\/shop_images\/Hustle_Clean_Hero_Image_Mobile_3.jpg",
+          "alignment": "top",
+          "hero_layout": "full_width",
+          "hero_size": "x-large",
+          "text_size": "medium",
+          "title": "Get empowered. Get going. Get Hustle Clean.",
+          "text": "<p>  <\/p>",
+          "button_label": "Shop Now",
+          "button_link": "shopify:\/\/collections\/shop-all"
+        }
+      },
+      "kori-carter-ambass": {
+        "type": "kori-carter-ambass",
+        "settings": {}
+      },
+      "stores": {
+        "type": "stores",
+        "blocks": {
+          "9170d7c7-f954-424b-b174-c5ad2aa5aca0": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Target_logo.png"
+            }
+          },
+          "59276876-dc19-4324-b16d-411c834d4d3f": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Amazon_logo.png"
+            }
+          },
+          "f6abeff8-7af5-48bf-9ea0-b3a60b8ec765": {
+            "type": "logo",
+            "settings": {
+              "img": "shopify:\/\/shop_images\/Walmart_logo.png"
+            }
+          }
+        },
+        "block_order": [
+          "9170d7c7-f954-424b-b174-c5ad2aa5aca0",
+          "59276876-dc19-4324-b16d-411c834d4d3f",
+          "f6abeff8-7af5-48bf-9ea0-b3a60b8ec765"
+        ],
+        "settings": {}
+      },
+      "162005158859042638": {
+        "type": "quick-shop-b",
+        "disabled": true,
+        "settings": {}
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": false,
+          "cart_notes_enable": false
+        }
+      },
+      "collection-hero": {
+        "type": "collection-hero",
+        "settings": {
+          "heroTitle": "Headline",
+          "heroBtnText": "",
+          "heroBtnLink": "#",
+          "second-enabled": false,
+          "secondBtnText": "Button Text",
+          "secondBtnLink": "#"
+        }
+      },
+      "collection-quick-shop": {
+        "type": "collection-quick-shop",
+        "settings": {
+          "title": "",
+          "description": "",
+          "collection": "shop-all"
+        }
+      },
+      "1637750575a2d031d6": {
+        "type": "quick-shop",
+        "settings": {}
+      },
+      "pdp-featured-hustle": {
+        "type": "pdp-featured-hustle",
+        "blocks": {
+          "020b177b-8479-4c08-9faa-fa8962cf122e": {
+            "type": "recommended_product",
+            "settings": {
+              "product": "the-body-wipe-1",
+              "text": "<p>Made by athletes to cleanse and refresh, The Body Wipe is your #1 workout, travel, camping and life companion. Big enough and tough enough to clean your entire body, this wipe hooks it up when you hustle so hard, there's no time for shower. Goodbye, funk...and hello, clean!<\/p>"
+            }
+          },
+          "8a7b6bf9-8a32-434b-8dec-f29dec341461": {
+            "type": "recommended_product",
+            "settings": {
+              "product": "the-face-wipe-1",
+              "text": "<p>Leave your skin feeling cleansed, moisturized and renewed every time you work up a sweat without ever having to wash your face. With charcoal powder, aloe vera and cucumber, this dual-sided wipe first removes sweat and dirt then soothes and hydrates your skin. <\/p>"
+            }
+          },
+          "13ade9ce-9d6b-46e9-b284-27995f558af2": {
+            "type": "recommended_product",
+            "settings": {
+              "product": "face-mask",
+              "text": "<p>This is gonna turn some heads. Light material with durable, soft straps. The mask hugs your face comfortably with plenty of room to breathe. A necessary addition to your daily hygiene set.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "020b177b-8479-4c08-9faa-fa8962cf122e",
+          "8a7b6bf9-8a32-434b-8dec-f29dec341461",
+          "13ade9ce-9d6b-46e9-b284-27995f558af2"
+        ],
+        "settings": {
+          "title": "Looking for more?"
+        }
+      },
+      "pdp-featured-face": {
+        "type": "pdp-featured-face",
+        "blocks": {
+          "93eb2866-9bd9-4906-b18c-84faf0805f8c": {
+            "type": "recommended_product",
+            "settings": {
+              "product": "the-body-wipe-1",
+              "text": "<p>Made by athletes to cleanse and refresh, The Body Wipe is your #1 workout, travel, camping and life companion. Big enough and tough enough to clean your entire body, this wipe hooks it up when you hustle so hard, there's no time for shower. Goodbye, funk...and hello, clean!<\/p>"
+            }
+          },
+          "37f4af65-7ec2-4841-b7c7-fe59cd0eedf2": {
+            "type": "recommended_product",
+            "settings": {
+              "product": "the-hustle-kit",
+              "text": "<p>This 4-piece kit is the perfect way to explore our fan favorites and keep your body, face and hands squeaky clean, no matter where the day takes you. Made with the highest quality clean ingredients to nourish, cleanse and protect.<\/p>"
+            }
+          },
+          "45f111ae-202b-48cc-b904-2c9df37df807": {
+            "type": "recommended_product",
+            "settings": {
+              "product": "relentless-t-shirt",
+              "text": "<p>We can’t stop you. No one can. So wear it proudly on your chest! This crisp white tee is a must-have for your daily grind.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "93eb2866-9bd9-4906-b18c-84faf0805f8c",
+          "37f4af65-7ec2-4841-b7c7-fe59cd0eedf2",
+          "45f111ae-202b-48cc-b904-2c9df37df807"
+        ],
+        "settings": {
+          "title": "Looking for more?"
+        }
+      },
+      "pdp-featured-body": {
+        "type": "pdp-featured-body",
+        "blocks": {
+          "a58b8174-1696-40f0-b976-211de2d2bac2": {
+            "type": "recommended_product",
+            "settings": {
+              "product": "the-face-wipe-1",
+              "text": "<p>Leave your skin feeling cleansed, moisturized and renewed every time you work up a sweat without ever having to wash your face. With charcoal powder, aloe vera and cucumber, this dual-sided wipe first removes sweat and dirt then soothes and hydrates your skin. <\/p>"
+            }
+          },
+          "92a4c26e-7e68-42ca-910c-27c4aa224679": {
+            "type": "recommended_product",
+            "settings": {
+              "product": "the-hustle-kit",
+              "text": "<p>This 4-piece kit is the perfect way to explore our fan favorites and keep your body, face and hands squeaky clean, no matter where the day takes you. Made with the highest quality clean ingredients to nourish, cleanse and protect.<\/p>"
+            }
+          },
+          "ab57f899-06a0-42b4-b6f8-b5199bdd7bea": {
+            "type": "recommended_product",
+            "settings": {
+              "product": "relentless-t-shirt",
+              "text": "<p>We can’t stop you. No one can. So wear it proudly on your chest! This crisp white tee is a must-have for your daily grind.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "a58b8174-1696-40f0-b976-211de2d2bac2",
+          "92a4c26e-7e68-42ca-910c-27c4aa224679",
+          "ab57f899-06a0-42b4-b6f8-b5199bdd7bea"
+        ],
+        "settings": {
+          "title": "Looking for more?"
+        }
+      },
+      "1639375552d7cd572d": {
+        "type": "product-feature-2",
+        "settings": {
+          "word-one": "The",
+          "word-two": "HUSTLE",
+          "word-three": "KIT",
+          "subtitle": "NEVER COMPROMISE",
+          "paragraph": "This 4-piece kit is the perfect way to explore our fan favorites and keep your body, face and hands squeaky clean.",
+          "btnLink": "shopify:\/\/products\/the-hustle-kit",
+          "btnText": "Shop Now",
+          "image": "shopify:\/\/shop_images\/Homepage_Hero_Images_-_The_Hustle_Pack.png"
+        }
+      },
+      "collection-wholesale": {
+        "type": "collection-wholesale",
+        "settings": {
+          "title": "Headline Example",
+          "description": "<p>Description Example<\/p>",
+          "collection": ""
+        }
+      },
+      "story-hero": {
+        "type": "story-hero",
+        "settings": {
+          "heroImage": "shopify:\/\/shop_images\/Homepage_Hero_Images_-_The_Hustle_Pack.jpg",
+          "heroTitle": "OUR Story",
+          "heroDesc": "What began as a body wipe to get us from practice to class on time became a mission to motivate the masses. Enter: Hustle Clean, a self-care movement at the intersection of hustle and hygiene.",
+          "heroBtnText": "Shop Now",
+          "heroBtnLink": "shopify:\/\/collections\/shop-all",
+          "second-enabled": false,
+          "secondBtnText": "Button Text",
+          "secondBtnLink": ""
+        }
+      },
+      "story-page": {
+        "type": "story-page",
+        "settings": {}
+      }
+    },
+    "content_for_index": [
+      "16164281800ebfadb6",
+      "1618512238a63d6dcc",
+      "162005158859042638",
+      "1637750575a2d031d6",
+      "1616604012856454a2",
+      "1616430640d13474c1",
+      "161643423566a0faf3",
+      "1616523353d6ae666b",
+      "1616525486acc29771",
+      "1616598352a816318c",
+      "1639375552d7cd572d",
+      "1616601103a611fb3a",
+      "1616624087b3cb99f7"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

@@ -1,0 +1,91 @@
+<style>
+    .stores-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+        .stores-section {
+            flex-direction: column;
+            height: 100%;
+            padding-top: 40px;
+        }
+    }
+
+    .stores-section__title {
+        font-size: 24px;
+        color: #98989a;
+        letter-spacing: 1.2px;
+        line-height: 20px;    
+        margin: 0;
+        font-family: "Cenzoflare";
+    }
+
+    .stores-section__container {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (max-width: 600px) {
+        .stores-section__container {
+            flex-direction: column;
+        }
+    }
+
+    .stores-section__img {
+        height: 45px;
+        margin: 0 40px;
+    }
+
+    @media (max-width: 600px) {
+        .stores-section__img {
+            margin: 20px 10px;
+        }
+    }
+
+</style>
+
+<div class="stores-section">
+    <h3 class="stores-section__title">Available Nationwide</h3>
+    <div class="stores-section__container">
+        {%- for block in section.blocks -%}
+        <a href="{{block.settings.url}}">
+            <img class="stores-section__img" src="{{ block.settings.img | img_url: 'master' }}" />
+        </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Store Logos",
+  "max_blocks": 5,
+  "blocks": [
+  {
+    "type": "logo",
+    "name": "Logo",
+    "settings": [
+      {
+        "id": "img",
+        "type": "image_picker",
+        "label": "Press Logos"
+      },
+      {
+        "id": "url",
+        "type": "url",
+        "label": "Logo URL"
+      }
+    ]
+  }
+],
+"presets": [
+    {
+      "name": "Store Logos",
+      "category": "Product"
+    }
+  ]        
+}
+{% endschema %}

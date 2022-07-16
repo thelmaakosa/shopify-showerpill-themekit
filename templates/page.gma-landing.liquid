@@ -1,0 +1,67 @@
+<div class="gma-landing__wrapper">
+    <div class="gma-landing__content-container">
+        <h1 class="gma-landing__title">Win This Hustle Pack!</h1>
+        <img class="gma-landing__image" src="{{ 'GMA.png' | asset_img_url: 'master' }}" />
+        <h3 class="gma-landing__subtitle">Includes</h3>
+        <ul class="gma-landing__list">
+            <li>1x Pack of 25 Face Wipes, Unscented</li>
+            <li>1x Hand Sanitizing Mist, Lavender</li>
+            <li>1x Hustle Clean Crossbody Mini Bag, Black</li>
+        </ul>
+        <div class="gma-landing__content-images">
+            <div>
+                <img src="{{ 'GMA-1.png' | asset_img_url: 'master' }}" />
+            </div>
+            <div>
+                <img src="{{ 'GMA-2.png' | asset_img_url: 'master' }}" />
+            </div>
+            <div>
+                <img src="{{ 'GMA-3.png' | asset_img_url: 'master' }}" />
+            </div>
+        </div>
+    </div>
+    <div class="gma-landing__form-container">
+        <form class="gma-landing__form" id="email_signup" class="klaviyo_default_styling" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET" target="_blank" novalidate="novalidate">
+            <input type="hidden" name="g" value="XDsuZu">
+            <input type="hidden" name="$fields" value="$consent, firstName, lastName, postal, accepts_marketing">
+            <input type="hidden" name="$list_fields" value="$consent">
+
+            <span class="gma-landing__form-title">ENTER HERE FOR YOUR CHANCE TO WIN!</span>
+            <label for="klaviyo_form_firstName">First Name*</label>
+            <input type="text" placeholder="First Name" type="text" value="" name="firstName" id="klaviyo_form_firstName" required />
+            <label for="klaviyo_form_lastName">Last Name*</label>
+            <input type="text" placeholder="Last Name" name="lastName" id="klaviyo_form_lastName" required />
+            <label>Email Address*</label>
+            <input placeholder="Email Address" type="email" value="" name="email" id="k_id_email" required />
+            <label for="klaviyo_form_postal">Zip Code (Represent!)</label>
+            <input placeholder="Zip Code" type="text" value="" name="postal" id="klaviyo_form_postal" required />
+            <div style="display:flex;margin-top:20px;">
+                <input style="margin-right:10px;" type="checkbox" value="true" name="accepts_marketing" id="klaviyo_form_accepts_marketing" />
+                <label style="margin-top:0;" for="klaviyo_form_accepts_marketing">Yes, I'd like to join your newsletter to kick off each month with Hustle Clean on my team, with news and special offers.</label>
+            </div>
+            <span class="gma-landing__form-terms">By submitting a giveaway entry you are to our <a href="/pages/terms-conditions" target="_blank">terms of service</a></span>
+            <div class="klaviyo_messages">
+                <div class="success_message" style="display:none;"></div>
+                <div class="error_message" style="display:none;"></div>
+            </div>
+            <input class="klaviyo_submit_button gma-landing__submit-btn" type="submit" value="LET'S GO!" />
+        </form>
+        <span class="gma-landing__details">Ends 11:59pm CST on Monday, August 2 2021. Winners will be contacted by email. We do not sell or share your details. </span>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+<script type="text/javascript">
+ KlaviyoSubscribe.attachToForms('#email_signup', {
+ hide_form_on_success: true,
+ success: function() {
+    console.log('hi')
+    $('.gma-landing__submit-btn').hide()
+    $('.success_message').html("YOU'RE IN! Now let's get some of that clean hustle. Learn more about how we invest in our communities <a target='_blank' href='/pages/hustle'>here.</a>")
+ },
+ extra_properties: {
+      $source: 'GMAPageSignUp'
+    }
+ });
+</script>

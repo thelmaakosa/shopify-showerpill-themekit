@@ -1,0 +1,78 @@
+<div class="product-feature__section">
+    <div class="product-feature__content">
+        <h1 class="product-feature__title">{{ section.settings.word-one }} <span>{{ section.settings.word-two }}</span> {{ section.settings.word-three }}</h1>
+        <h4 class="product-feature__subtitle">{{ section.settings.subtitle }}</h4>
+        <p class="product-feature__paragraph">
+          {{ section.settings.paragraph }}
+        </p>
+        <a href="{{ section.settings.btnLink }}">
+          <button class="btn-primary">{{ section.settings.btnText }}</button>
+        </a>
+    </div>
+    <div class="product-feature__image">
+        <img src="{{ section.settings.image | img_url: 'master' }}" />
+    </div>
+    
+    
+ 
+</div>
+
+{% schema %}
+{
+  "name": "Product Feature-2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "word-one",
+      "label": "Word One",
+      "default": "The"
+    },
+    {
+      "type": "text",
+      "id": "word-two",
+      "label": "Word Two",
+      "default": "Body"
+    },
+    {
+      "type": "text",
+      "id": "word-three",
+      "label": "Word Three",
+      "default": "Wipe"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Availale in Unscented, Fresh, and Lavender"
+    },
+    {
+      "type": "text",
+      "id": "paragraph",
+      "label": "Paragraph",
+      "default": "Every day, every body. Proven to kill 99.99% of germs, while leaving skin feeling clean, fresh, and moisturized... like you just stepped out of the shower."
+    },
+    {
+      "type": "url",
+      "id": "btnLink",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "btnText",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "image"
+    }
+  ],
+"presets": [
+    {
+      "name": "Product Feature-2",
+      "category": "Product"
+    }
+  ]    
+}
+{% endschema %}

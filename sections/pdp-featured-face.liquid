@@ -1,0 +1,87 @@
+{%- assign product = all_products[section.settings.featured_product] -%}
+<h4 class="recommended_products_title">{{section.settings.title}}</h4>
+
+<div class="container">
+  {% for block in section.blocks limit: section.blocks.size %}
+    <div class="Product-Page__Featured-Product size-{{section.blocks.size}}">
+        <img src="{{ block.settings.product | img_url: 'large' }}" />
+        <h1 class="featured-product__title">{{ block.settings.product.title }}</h1>
+        <div class="featured-product__paragraph">{{block.settings.text}}</div>
+        <a href="{{ block.settings.product.url }}">
+            <button class="btn-primary">Shop Now</button>
+        </a>
+    </div>
+  {% endfor %}
+</div>
+{% schema %}
+{
+  "name": "PDP-Featured-Face",
+  "max_blocks": 12,
+  "class":"recommended_product",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label":"Section Title",
+      "default":"Looking for more?"
+    }
+  ],
+  "blocks": [
+    {
+      "type":"recommended_product",
+      "name":"Recommended product",
+      "settings":[
+        {
+          "label":"Recommended Product",
+          "id":"product",
+          "type":"product"
+        },
+        {
+          "id":"text",
+          "type":"richtext",
+          "label":"text"
+        }
+
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+.size-2{
+  width:50%;
+  height:auto;
+}
+.size-3{
+  width:33.33%;
+  height:auto;
+}
+.size-4{
+  width:33.33%;
+  height:auto;
+}
+.recommended_product .container{
+  display:flex;
+}
+.recommended_products_title{
+    padding-top: 50px;
+    padding-bottom:20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    background: #fff;
+    margin: 0;
+    color: #171717;
+}
+
+@media screen and (max-width:767px){
+  .recommended_product .container{
+    display:block;
+  }
+  .size-2, .size-3, .size-4{
+    width: 100%;
+  }
+}
+{% endstyle %}

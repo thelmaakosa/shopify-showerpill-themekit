@@ -1,0 +1,56 @@
+<div class="FAQ-Section" product-handle="{{product.handle}}">
+    <div class="FAQ__left">
+        <h2 class="FAQ__left--title">FAQS</h2>
+        <h5 class="FAQ__left--question">
+            What ingredients are in your wipes?
+        </h5>
+        <p class="FAQ__left--answer">
+           Only the good stuff! We use the highest quality ingredients and test our products with real athletes, trainers and doctors. No alcohol, parabens or sulfates. Learn more.
+        </p>
+        <h5 class="FAQ__left--question">
+            Are these wipes safe to use on kids?
+        </h5>
+        <p class="FAQ__left--answer">
+            Absolutely! Our founders rely on the product to wipe down their kids between bath times. In fact, our active ingredient is safely found in many baby products.
+        </p>
+        <h5 class="FAQ__left--question">
+            Do you offer wholesale? 
+        </h5>
+        <p class="FAQ__left--answer">Yes! Retail businesses, gyms, and community organizations are all eligible for wholesale pricing. Reach out & let's work together.</p>
+        <a href="{{section.settings.url}}"><button class="btn-primary">{{section.settings.text}}</button></a>
+    </div>
+    <div class="FAQ__right">
+        <div class="FAQ__overlay"></div>
+        <p><img src="{{ 'Check-icon.png' | asset_img_url: 'small' }}" class="check-mark">KILLS 99.9% of GERMS</p>
+        <p><img src="{{ 'Check-icon.png' | asset_img_url: 'small' }}" class="check-mark">Quick Drying</p>
+        <p><img src="{{ 'Check-icon.png' | asset_img_url: 'small' }}" class="check-mark">Soothes Skin</p>
+        <p><img src="{{ 'Check-icon.png' | asset_img_url: 'small' }}" class="check-mark">Clean Ingredients</p>
+    </div>
+    
+
+</div>
+
+{% schema %}
+{
+    "name": "Product FAQ",
+    "settings":[
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Learn More Text",
+            "default": "Learn More"
+        },
+        {
+            "type": "url",
+            "id":"url",
+            "label": "Read More"
+        }     
+    ],
+    "presets": [
+        {
+        "name": "Product FAQ",
+        "category": "Product"
+        }
+    ]    
+}
+{% endschema %}

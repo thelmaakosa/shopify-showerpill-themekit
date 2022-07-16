@@ -1,0 +1,116 @@
+<div class="innner-page__wrapper">
+    <div class="inner-page__hero">
+        <div class="inner-page__hero-content">
+            {% comment %} <h1 class="inner-page__hero-title">{{ section.settings.heroTitle }}</h1> {% endcomment %}
+            <h1 class="inner-page__hero-title">{{ collection.title }}</h1>
+            <p class="inner-page__hero-paragraph">
+                {{ collection.description }}
+            </p>
+            {% if section.settings.heroBtnText != blank %}
+                <div class="btn-container">
+                    <a href="{{ section.settings.heroBtnLink }}">
+                        <button class="btn-primary">{{ section.settings.heroBtnText }}</button>
+                    </a>
+                    {% if section.settings.second-enabled %}
+                    <a href="{{ section.settings.secondBtnLink }}">
+                        <button class="btn-transparent">{{ section.settings.secondBtnText }}</button>
+                    </a>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+        <div class="inner-page__hero-image">
+            <div class="inner-page__hero-overlay"></div>
+            {% comment %} <img src="{{ section.settings.heroImage | img_url: 'master' }}" /> {% endcomment %}
+            {{ collection.image | image_url: width: 2048 | image_tag }}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection Hero",
+  "class": "collection-hero",
+  "settings": [
+    {
+        "id": "heroTitle",
+        "type": "text",
+        "label": "Hero Title",
+        "default": "Headline"
+    },
+    {
+        "id": "heroBtnText",
+        "type": "text",
+        "label": "Hero Button Text",
+        "default": "Button Text"
+    },
+    {
+        "id": "heroBtnLink",
+        "type": "url",
+        "label": "Hero Button URL"
+    },
+    {
+        "type": "checkbox",
+        "id": "second-enabled",
+        "label": "Enable Second Button"
+    },
+    {
+        "id": "secondBtnText",
+        "type": "text",
+        "label": "Second Button Text",
+        "default": "Button Text"
+    },
+    {
+        "id": "secondBtnLink",
+        "type": "url",
+        "label": "Second Button URL"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+    .collection-hero .btn-container{
+        display:flex;
+    }
+    .collection-hero .btn-container a{
+        width:50%;
+    }
+    .collection-hero button{
+        text-transform: none;
+    }
+    .collection-hero h1{
+        {% comment %} text-transform: none; {% endcomment %}
+    }
+    .collection-hero .image-container{
+        width:50%;
+        position: relative;
+    }
+    .collection-hero .image-container img{
+        width: 80%;
+        height: auto;
+        position: absolute;
+        bottom: -50px;
+    }
+    .collection-hero .hero-background{
+        width: 60%;
+        height: 70%;
+        background: bisque;
+        right: 14%;
+        bottom: -100px;
+        position: absolute;
+    }
+    .collection-hero .inner-page__hero{
+        max-height: 300px;
+        margin-top: 147px;
+    }
+
+    @media screen and (max-width:767px){
+        .collection-hero .image-container{
+            display:none;
+        }
+        .collection-hero .inner-page__hero{
+            margin-top: 55px;
+        }
+    }
+{% endstyle%}

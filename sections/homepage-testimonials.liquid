@@ -1,0 +1,185 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<style>
+    .homepage-testimonials__wrapper {
+        position: relative;
+    }
+    .swiper-container__testimonials {
+      height: 450px;
+    }
+
+    @media (max-width: 900px) {
+      .swiper-container__testimonials {
+        height: 100%;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        background-color: #f7f7f7;
+      }
+    }
+    
+
+    .swiper-slide__background {
+      background-color: #f7f7f7;
+    }
+
+  .swiper__testimonial-item {
+      display: flex;
+      justify-content: center;
+  }
+
+  @media (max-width: 900px) {
+    .swiper__testimonial-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .swiper__testimonial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 50%;
+    padding-left: 100px;
+  }
+
+  @media (max-width: 900px) {
+    .swiper__testimonial-content {
+      align-items: center;
+      max-width: unset;
+      padding-left: 0;
+    }
+  }
+
+  .swiper__testimonial-paragraph {
+      color: #171717;
+      font-size: 30px;
+      text-align: left;
+  }
+  
+  @media (max-width: 900px) {
+    .swiper__testimonial-paragraph {
+      text-align: center;
+      max-width: 90%;
+    }
+  }
+
+  .swiper__testimonial-name {
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .swiper__testimonial-career {
+      font-size: 18px;
+      font-weight: 400;
+      color: #0D0D0D99;
+  }
+
+  .quote-mark {
+      font-size: 350px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #C7A478;
+      position: absolute;
+      z-index: 10;
+      right: 80px;
+      top: -75px;
+  }
+
+  @media (max-width: 600px) {
+    .quote-mark {
+      display: none;
+    }
+  }
+
+  
+
+</style>
+<div class="homepage-testimonials__wrapper">
+<img class="quote-mark" src="{{ 'Quote-Mark-Crop.png' | asset_img_url: 'medium' }}" />
+    <div class="swiper-container__testimonials">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+          <div class="swiper-slide swiper-slide__background">
+              <div class="swiper__testimonial-item">
+                  <div class="">
+                  <img src="{{ block.settings.image | img_url: 'medium'  }}" />
+                  </div>
+                  <div class="swiper__testimonial-content">
+                      <p class="swiper__testimonial-paragraph">
+                        {{ block.settings.paragraph }}
+                      </p>
+                      <h3 class="swiper__testimonial-name">{{ block.settings.name }}</h3>
+                      <h3 class="swiper__testimonial-career">{{ block.settings.title }}</h3>
+                  </div>
+              </div>
+          </div>
+        {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container__testimonials', {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+      delay: 5000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      effect: 'fade',
+      fadeEffect: {
+          crossFade: true
+      },
+    });
+  </script>
+
+
+{% schema %}
+{
+  "name": "Home Page Testimonials",
+  "max_blocks": 5,
+  "blocks": [
+  {
+    "type": "testimonial",
+    "name": "Testimonial",
+    "settings": [
+      {
+        "id": "image",
+        "type": "image_picker",
+        "label": "Image"
+      },
+      {
+        "id": "paragraph",
+        "type": "text",
+        "label": "Content"
+      },
+      {
+        "id": "name",
+        "type": "text",
+        "label": "Name"
+      },
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Career / Title"
+      }
+    ]
+  }
+],
+"presets": [
+    {
+      "name": "Home Page Testimonials",
+      "category": "Product"
+    }
+  ]    
+}
+{% endschema %}

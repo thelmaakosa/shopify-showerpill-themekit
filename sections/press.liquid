@@ -1,0 +1,42 @@
+<div class="press-section">
+    <h3 class="press-section__title">As Seen On</h3>
+    <div class="press-section__container">
+        {%- for block in section.blocks -%}
+        <img class="press-section__img" src="{{ block.settings.img | img_url: 'medium' }}" />
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Press Logos",
+  "max_blocks": 5,
+  "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "As Seen On"
+    }
+  ],
+  "blocks": [
+  {
+    "type": "logo",
+    "name": "Logo",
+    "settings": [
+      {
+        "id": "img",
+        "type": "image_picker",
+        "label": "Press Logos"
+      }
+    ]
+  }
+],
+"presets": [
+    {
+      "name": "Press Logos",
+      "category": "Product"
+    }
+  ]        
+}
+{% endschema %}

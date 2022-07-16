@@ -1,0 +1,83 @@
+<div class="product-focus__section">
+    <div class="product-focus__content">
+        <h1 class="product-focus__title">{{ section.settings.word-one }} <span>{{ section.settings.word-two }}</span> {{ section.settings.word-three }}</h1>
+        <h4 class="product-focus__subtitle">{{ section.settings.subtitle }}</h4>
+        <p class="product-focus__paragraph">
+          {{ section.settings.paragraph }}
+        </p>
+        <a href="{{ section.settings.btnLink }}">
+          <button class="btn-primary">{{ section.settings.btnText }}</button>
+        </a>
+    </div>
+    <div class="product-focus__background-image">
+      <img style="height:100%;" src="{{ section.settings.image | img_url: 'master' }}" />
+    </div>
+    <div class="product-focus__image--mobile">
+      <img style="height:100%;" src="{{ section.settings.imageMobile | img_url: 'master' }}" />
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Focus",
+  "settings": [
+    {
+        "type": "text",
+        "id": "word-one",
+        "label": "Word One",
+        "default": "The"
+    },
+    {
+      "type": "text",
+      "id": "word-two",
+      "label": "Word Two",
+      "default": "Body"
+    },
+    {
+      "type": "text",
+      "id": "word-three",
+      "label": "Word Three",
+      "default": "Wipe"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Availale in Unscented, Fresh, and Lavender"
+    },
+    {
+      "type": "text",
+      "id": "paragraph",
+      "label": "Paragraph",
+      "default": "Every day, every body. Proven to kill 99.99% of germs, while leaving skin feeling clean, fresh, and moisturized... like you just stepped out of the shower."
+    },
+    {
+      "type": "url",
+      "id": "btnLink",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "btnText",
+      "label": "Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "imageMobile",
+      "label": "Image Mobile"
+    }
+  ],
+"presets": [
+    {
+      "name": "Product Focus",
+      "category": "Product"
+    }
+  ]    
+}
+{% endschema %}
